@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Core\MicrosoftOrnekBackendUyg.Core.csproj" />
+    <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Data\MicrosoftOrnekBackendUyg.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.31515.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftOrnekBackendUyg", "MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.csproj", "{12D9706D-DEFD-4E6B-B5F5-193542D1599D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftOrnekBackendUyg.Core", "MicrosoftOrnekBackendUyg.Core\MicrosoftOrnekBackendUyg.Core.csproj", "{8CED6B7C-24E9-4638-8772-775E8DE717EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftOrnekBackendUyg.Data", "MicrosoftOrnekBackendUyg.Data\MicrosoftOrnekBackendUyg.Data.csproj", "{13456571-3D4D-4C07-899A-67FBBA8BE7A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftOrnekBackendUyg.Service", "MicrosoftOrnekBackendUyg.Service\MicrosoftOrnekBackendUyg.Service.csproj", "{BD26464C-98CE-4662-B39C-AD2C7E587B83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{12D9706D-DEFD-4E6B-B5F5-193542D1599D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12D9706D-DEFD-4E6B-B5F5-193542D1599D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12D9706D-DEFD-4E6B-B5F5-193542D1599D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CED6B7C-24E9-4638-8772-775E8DE717EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CED6B7C-24E9-4638-8772-775E8DE717EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CED6B7C-24E9-4638-8772-775E8DE717EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CED6B7C-24E9-4638-8772-775E8DE717EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13456571-3D4D-4C07-899A-67FBBA8BE7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13456571-3D4D-4C07-899A-67FBBA8BE7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13456571-3D4D-4C07-899A-67FBBA8BE7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13456571-3D4D-4C07-899A-67FBBA8BE7A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD26464C-98CE-4662-B39C-AD2C7E587B83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD26464C-98CE-4662-B39C-AD2C7E587B83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD26464C-98CE-4662-B39C-AD2C7E587B83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD26464C-98CE-4662-B39C-AD2C7E587B83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

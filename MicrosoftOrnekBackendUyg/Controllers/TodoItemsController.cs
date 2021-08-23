@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MicrosoftOrnekBackendUyg.Models;
+using System.Data;
+using System.Data.SqlClient;
+using Microsoft.Extensions.Configuration;
 
 namespace MicrosoftOrnekBackendUyg.Controllers
 {
@@ -13,6 +16,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
     [ApiController]
     public class TodoItemsController : ControllerBase
     {
+        private readonly IConfiguration _configuration;
         private readonly TodoContext _context;
 
         public TodoItemsController(TodoContext context)
@@ -21,9 +25,16 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
         public class TodoItemDTO
         {
-            public long Id { get; set; }
+           
             public string Name { get; set; }
             public bool IsComplete { get; set; }
+            public long ItemId { get; set; }
+            public int tutar { get; set; }
+            public int topkdv { get; set; }
+            public int kdvsizfiyat { get; set; }
+            public DateTime son_odeme { get; set; }
+            public string icerik { get; set; }
+            public bool odendi { get; set; }
         }
         // GET: api/TodoItems
         [HttpGet]
@@ -50,7 +61,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateTodoItem(long id, TodoItemDTO todoItemDTO)
         {
-            if (id != todoItemDTO.Id)
+            if (id != todoItemDTO.ItemId)
             {
                 return BadRequest();
             }
@@ -63,6 +74,12 @@ namespace MicrosoftOrnekBackendUyg.Controllers
 
             todoItem.Name = todoItemDTO.Name;
             todoItem.IsComplete = todoItemDTO.IsComplete;
+            todoItem.tutar = todoItemDTO.tutar;
+            todoItem.topkdv = todoItemDTO.topkdv;
+            todoItem.kdvsizfiyat = todoItemDTO.kdvsizfiyat;
+            todoItem.son_odeme = todoItemDTO.son_odeme;
+            todoItem.icerik = todoItemDTO.icerik;
+            todoItem.odendi = todoItemDTO.odendi;
 
             try
             {
@@ -76,22 +93,75 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return NoContent();
         }
 
+       /* [HttpPost]
+        public JsonResult Post(TodoItem dep)
+        {
+            string query = @"
+                    insert into dbo.Fatura values 
+                    ('" + dep.Id + @"')
+                    ";
+            DataTable table = new DataTable();
+            string sqlDataSource = _configuration.GetConnectionString("TodoItemsController");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }
+
+            return new JsonResult("Added Successfully");
+        }*/
+
         [HttpPost]
         public async Task<ActionResult<TodoItemDTO>> CreateTodoItem(TodoItemDTO todoItemDTO)
         {
             var todoItem = new TodoItem
             {
                 IsComplete = todoItemDTO.IsComplete,
-                Name = todoItemDTO.Name
-            };
+                Name = todoItemDTO.Name,
+                tutar = todoItemDTO.tutar,
+                topkdv = todoItemDTO.topkdv,
+                kdvsizfiyat = todoItemDTO.kdvsizfiyat,
+                son_odeme = todoItemDTO.son_odeme,
+                icerik = todoItemDTO.icerik,
+                odendi = todoItemDTO.odendi
+        };
 
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction(
+            /*return CreatedAtAction(
                 nameof(GetTodoItem),
                 new { id = todoItem.Id },
-                ItemToDTO(todoItem));
+                ItemToDTO(todoItem));*/
+            /*string query = @"
+                    insert into dbo.Fatura values 
+                    ('" + todoItemDTO.Id + @"')
+                    ";
+            DataTable table = new DataTable();
+            string sqlDataSource = _configuration.GetConnectionString("TodoAppCon");
+            SqlDataReader myReader;
+            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+            {
+                myCon.Open();
+                using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                {
+                    myReader = myCommand.ExecuteReader();
+                    table.Load(myReader);
+
+                    myReader.Close();
+                    myCon.Close();
+                }
+            }*/
+
+            return new JsonResult("Added Successfully");
         }
 
         [HttpDelete("{id}")]
@@ -111,14 +181,20 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
 
         private bool TodoItemExists(long id) =>
-             _context.TodoItems.Any(e => e.Id == id);
+             _context.TodoItems.Any(e => e.ItemId == id);
 
         private static TodoItemDTO ItemToDTO(TodoItem todoItem) =>
             new TodoItemDTO
             {
-                Id = todoItem.Id,
+                ItemId = todoItem.ItemId,
                 Name = todoItem.Name,
-                IsComplete = todoItem.IsComplete
+                IsComplete = todoItem.IsComplete,
+                tutar = todoItem.tutar,
+                topkdv = todoItem.topkdv,
+                kdvsizfiyat = todoItem.kdvsizfiyat,
+                son_odeme = todoItem.son_odeme,
+                icerik = todoItem.icerik,
+                odendi = todoItem.odendi
             };
     }
 }

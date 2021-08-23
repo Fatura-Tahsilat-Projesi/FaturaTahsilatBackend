@@ -13,6 +13,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using MicrosoftOrnekBackendUyg.Models;
+using MicrosoftOrnekBackendUyg.Data;
+using MicrosoftOrnekBackendUyg.Data.UnitOfWorks;
+using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
 
 namespace MicrosoftOrnekBackendUyg
 {
@@ -28,10 +31,19 @@ namespace MicrosoftOrnekBackendUyg
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<AppDbContext>(options =>
+            {
+                options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString(),o=> {
+                    o.MigrationsAssembly("MicrosoftOrnekBackendUyg.Data");
+                });
+            });
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             services.AddControllers();
-            services.AddDbContext<TodoContext>(opt =>
-                                               opt.UseInMemoryDatabase("TodoList"));
+            //services.AddDbContext<TodoContext>(opt =>
+            //                                   opt.UseInMemoryDatabase("TodoList"));
+
             //services.AddSwaggerGen(c =>
             //{
             //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
