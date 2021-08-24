@@ -25,7 +25,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
         public class TodoItemDTO
         {
-           
+
             public string Name { get; set; }
             public bool IsComplete { get; set; }
             public long ItemId { get; set; }
@@ -93,31 +93,31 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return NoContent();
         }
 
-       /* [HttpPost]
-        public JsonResult Post(TodoItem dep)
-        {
-            string query = @"
-                    insert into dbo.Fatura values 
-                    ('" + dep.Id + @"')
-                    ";
-            DataTable table = new DataTable();
-            string sqlDataSource = _configuration.GetConnectionString("TodoItemsController");
-            SqlDataReader myReader;
-            using (SqlConnection myCon = new SqlConnection(sqlDataSource))
-            {
-                myCon.Open();
-                using (SqlCommand myCommand = new SqlCommand(query, myCon))
-                {
-                    myReader = myCommand.ExecuteReader();
-                    table.Load(myReader);
+        /* [HttpPost]
+         public JsonResult Post(TodoItem dep)
+         {
+             string query = @"
+                     insert into dbo.Fatura values 
+                     ('" + dep.Id + @"')
+                     ";
+             DataTable table = new DataTable();
+             string sqlDataSource = _configuration.GetConnectionString("TodoItemsController");
+             SqlDataReader myReader;
+             using (SqlConnection myCon = new SqlConnection(sqlDataSource))
+             {
+                 myCon.Open();
+                 using (SqlCommand myCommand = new SqlCommand(query, myCon))
+                 {
+                     myReader = myCommand.ExecuteReader();
+                     table.Load(myReader);
 
-                    myReader.Close();
-                    myCon.Close();
-                }
-            }
+                     myReader.Close();
+                     myCon.Close();
+                 }
+             }
 
-            return new JsonResult("Added Successfully");
-        }*/
+             return new JsonResult("Added Successfully");
+         }*/
 
         [HttpPost]
         public async Task<ActionResult<TodoItemDTO>> CreateTodoItem(TodoItemDTO todoItemDTO)
@@ -132,7 +132,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
                 son_odeme = todoItemDTO.son_odeme,
                 icerik = todoItemDTO.icerik,
                 odendi = todoItemDTO.odendi
-        };
+            };
 
             _context.TodoItems.Add(todoItem);
             await _context.SaveChangesAsync();

@@ -1,5 +1,6 @@
 ﻿using MicrosoftOrnekBackendUyg.Core.Repositories;
 using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
+using MicrosoftOrnekBackendUyg.Data.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,16 +13,23 @@ namespace MicrosoftOrnekBackendUyg.Data.UnitOfWorks
     {
         private readonly AppDbContext _context;
 
-        //private ProductRepository _productRepository;
+        private ProductRepository _productRepository;
+        private CategoryRepository _categoryRepository;
 
-        public IProductRepository Products => throw new NotImplementedException();
+        public IProductRepository Products => _productRepository = _productRepository ?? new ProductRepository(_context);
 
-        public ICategoryRepository Categories => throw new NotImplementedException();
+        public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new CategoryRepository(_context);
+
+        //public ICategoryRepository Categories => throw ;
 
         public UnitOfWork(AppDbContext appDbContext)
         {
             _context = appDbContext;
         }
+
+        //public IProductRepository Products => throw new NotImplementedException();
+
+        //public ICategoryRepository Categories => throw new NotImplementedException();
 
         public void Commit()
         {

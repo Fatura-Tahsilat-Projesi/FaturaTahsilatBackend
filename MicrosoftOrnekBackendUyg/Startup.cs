@@ -12,10 +12,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using MicrosoftOrnekBackendUyg.Models;
+
 using MicrosoftOrnekBackendUyg.Data;
 using MicrosoftOrnekBackendUyg.Data.UnitOfWorks;
 using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
+using MicrosoftOrnekBackendUyg.Core.Repositories;
+using MicrosoftOrnekBackendUyg.Core.Services;
+using MicrosoftOrnekBackendUyg.Service.Services;
+using MicrosoftOrnekBackendUyg.Data.Repositories;
+
 
 namespace MicrosoftOrnekBackendUyg
 {
@@ -31,6 +36,14 @@ namespace MicrosoftOrnekBackendUyg
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+
             services.AddDbContext<AppDbContext>(options =>
             {
                 options.UseSqlServer(Configuration["ConnectionStrings:SqlConStr"].ToString(),o=> {
@@ -38,7 +51,7 @@ namespace MicrosoftOrnekBackendUyg
                 });
             });
 
-            services.AddScoped<IUnitOfWork, UnitOfWork>();
+            
 
             services.AddControllers();
             //services.AddDbContext<TodoContext>(opt =>
