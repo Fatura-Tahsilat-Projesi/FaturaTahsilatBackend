@@ -10,8 +10,8 @@ using MicrosoftOrnekBackendUyg.Data;
 namespace MicrosoftOrnekBackendUyg.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210824125054_Initial4")]
-    partial class Initial4
+    [Migration("20210825184022_newDb3")]
+    partial class newDb3
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -57,14 +57,54 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Fatura", b =>
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Company", b =>
                 {
-                    b.Property<int>("FaturaId")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:IdentityIncrement", 1)
                         .HasAnnotation("SqlServer:IdentitySeed", 1)
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Category")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CompanyCode")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Companies");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>
+                {
+                    b.Property<int>("InvoiceId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CompanyId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DueDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<decimal>("ExcludingVat")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("InvoiceNu")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InvoiceType")
+                        .HasColumnType("int");
 
                     b.Property<int>("IsComplete")
                         .HasColumnType("int");
@@ -74,53 +114,56 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("icerik")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("kdvsizfiyat")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("odendi")
+                    b.Property<int>("StatusCode")
                         .HasColumnType("int");
 
-                    b.Property<DateTime>("son_odeme")
+                    b.Property<decimal>("Total")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("TotalVat")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("InvoiceId");
+
+                    b.HasIndex("CompanyId");
+
+                    b.ToTable("Invoices");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.InvoiceActivity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("CompanyId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("InvoiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("StatusCode")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("TransactionDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<decimal>("topkdv")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
 
-                    b.Property<decimal>("tutar")
-                        .HasColumnType("decimal(18,2)");
+                    b.HasKey("Id");
 
-                    b.HasKey("FaturaId");
+                    b.HasIndex("InvoiceId");
 
-                    b.ToTable("Faturalar");
+                    b.HasIndex("UserId");
 
-                    b.HasData(
-                        new
-                        {
-                            FaturaId = 1,
-                            IsComplete = 0,
-                            Name = "Su Faturası",
-                            icerik = "Su",
-                            kdvsizfiyat = 30m,
-                            odendi = 0,
-                            son_odeme = new DateTime(2021, 10, 10, 23, 59, 0, 0, DateTimeKind.Unspecified),
-                            topkdv = 70m,
-                            tutar = 100m
-                        },
-                        new
-                        {
-                            FaturaId = 2,
-                            IsComplete = 0,
-                            Name = "Elektrik Faturası",
-                            icerik = "Elektrik",
-                            kdvsizfiyat = 60m,
-                            odendi = 0,
-                            son_odeme = new DateTime(2021, 12, 10, 18, 0, 0, 0, DateTimeKind.Unspecified),
-                            topkdv = 60m,
-                            tutar = 120m
-                        });
+                    b.ToTable("InvoiceActivities");
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Product", b =>
@@ -216,6 +259,88 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Authorization")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("Iban")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Mail")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("PhoneNu")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Surname")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int>("TcNu")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>
+                {
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Company", "Company")
+                        .WithMany()
+                        .HasForeignKey("CompanyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Company");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.InvoiceActivity", b =>
+                {
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Invoice", "Invoice")
+                        .WithMany("InvoiceActivities")
+                        .HasForeignKey("InvoiceId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.User", "User")
+                        .WithMany("InvoiceActivities")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Invoice");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Product", b =>
                 {
                     b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Category", "Category")
@@ -230,6 +355,16 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Category", b =>
                 {
                     b.Navigation("Products");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>
+                {
+                    b.Navigation("InvoiceActivities");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.User", b =>
+                {
+                    b.Navigation("InvoiceActivities");
                 });
 #pragma warning restore 612, 618
         }
