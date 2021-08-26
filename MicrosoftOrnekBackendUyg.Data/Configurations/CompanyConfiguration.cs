@@ -9,22 +9,18 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Data.Configurations
 {
-    class ProductConfiguration : IEntityTypeConfiguration<Product>
+    class CompanyConfiguration : IEntityTypeConfiguration<Company>
     {
-        public void Configure(EntityTypeBuilder<Product> builder)
+        public void Configure(EntityTypeBuilder<Company> builder)
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).UseIdentityColumn();
-            
             builder.Property(x => x.Name).IsRequired().HasMaxLength(200);
-            builder.Property(x => x.Stock).IsRequired();
-            //3434.23
-            //Toplam 18 karakter, noktadan sonra 2 karakter
-            builder.Property(x => x.Price).IsRequired().HasColumnType("decimal(18,2)");
-            builder.Property(x => x.InnerBarcode).HasMaxLength(50);
+            builder.Property(x => x.Category).IsRequired();
+            builder.Property(x => x.CompanyCode).IsRequired();
 
-            builder.ToTable("Products");
 
+            builder.ToTable("Companies");
         }
     }
 }
