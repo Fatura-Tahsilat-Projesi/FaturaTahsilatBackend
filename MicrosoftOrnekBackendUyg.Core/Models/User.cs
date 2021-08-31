@@ -12,8 +12,8 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
 
         public User()
         {
-            //Invoices = new Collection<Invoice>();
-            InvoiceActivities = new Collection<InvoiceActivity>();
+            Invoices = new Collection<Invoice>();
+            //InvoiceActivities = new Collection<InvoiceActivity>();
         }
 
         public int Id { get; set; }
@@ -28,8 +28,8 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public int Iban { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        //public ICollection<Invoice> Invoices { get; set; }
-        public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
+        public ICollection<Invoice> Invoices { get; set; }
+        //public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
 
 
         //public virtual List<Invoice> Invoices { get; set; }

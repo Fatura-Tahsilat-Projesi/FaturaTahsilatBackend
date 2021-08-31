@@ -19,9 +19,9 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public DateTime TransactionDate { get; set; }
         public int StatusCode { get; set; }
 
-        public virtual User User { get; set; }
+       // public virtual User User { get; set; }
         public virtual Invoice Invoice { get; set; }
-        public virtual Company Company { get; set; }
+        //public virtual Company Company { get; set; }
 
         //public virtual List<Invoice> Invoices { get; set; }
     }
