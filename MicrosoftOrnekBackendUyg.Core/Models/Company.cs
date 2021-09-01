@@ -10,11 +10,11 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
     public class Company
     {
 
-        //public Company()
-        //{
-        //    Invoices = new Collection<Invoice>();
-        //    InvoiceActivities = new Collection<InvoiceActivity>();
-        //}
+        public Company()
+        {
+            Invoices = new Collection<Invoice>();
+            //InvoiceActivities = new Collection<InvoiceActivity>();
+        }
 
         public int Id { get; set; }
         public string Name { get; set; }
@@ -22,7 +22,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public int CompanyCode { get; set; }
 
 
-        //public ICollection<Invoice> Invoices { get; set; }
+        public ICollection<Invoice> Invoices { get; set; }
         //public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
 
         //public virtual List<Invoice> Invoices { get; set; }
