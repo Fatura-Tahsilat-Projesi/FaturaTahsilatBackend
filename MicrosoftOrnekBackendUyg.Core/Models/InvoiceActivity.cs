@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Core.Models
@@ -19,8 +20,11 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public DateTime TransactionDate { get; set; }
         public int StatusCode { get; set; }
 
+        [JsonIgnore]
         public virtual User User { get; set; }
+        [JsonIgnore]
         public virtual Invoice Invoice { get; set; }
+        [JsonIgnore]
         public virtual Company Company { get; set; }
 
         //public virtual List<Invoice> Invoices { get; set; }

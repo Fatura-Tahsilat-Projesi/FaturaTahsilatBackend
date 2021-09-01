@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using MicrosoftOrnekBackendUyg.Core.Services;
+using MicrosoftOrnekBackendUyg.DTOs;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,18 +15,21 @@ namespace MicrosoftOrnekBackendUyg.Controllers
     [ApiController]
     public class InvoicesController : ControllerBase
     {
-        private readonly IService<Invoice> _invoiceService;
+        //private readonly IService<Invoice> _invoiceService;
+        private readonly IInvoiceService _invoiceService;
+        private readonly IMapper _mapper;
 
-        public InvoicesController(IService<Invoice> invoiceService)
+        public InvoicesController(IInvoiceService invoiceService, IMapper mapper)
         {
             _invoiceService = invoiceService;
+            _mapper = mapper;
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var invoices = await _invoiceService.GetAllAsync();
-            return Ok(invoices);
+            return Ok(_mapper.Map<IEnumerable<InvoiceDto>>(invoices));
         }
 
         [HttpGet("{id}")]
@@ -32,9 +37,16 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         {
             var invoice = await _invoiceService.GetByIdAsync(id);
 
-            return Ok(invoice);
+            return Ok(_mapper.Map<InvoiceDto>(invoice));
         }
 
+        [HttpGet("{id}/invoiceActivities")]
+        public async Task<IActionResult> GetWithInvoiceActivitiesByIdAsync(int id)
+        {
+            var invoiceActivities = await _invoiceService.GetWithInvoiceActivitiesByIdAsync(id);
+
+            return Ok(invoiceActivities);
+        }
 
         [HttpPost]
         public async Task<IActionResult> Save(Invoice invoice)

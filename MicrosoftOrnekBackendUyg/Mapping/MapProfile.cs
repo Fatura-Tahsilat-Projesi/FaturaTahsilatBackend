@@ -12,17 +12,10 @@ namespace MicrosoftOrnekBackendUyg.Mapping
     {
         public MapProfile()
         {
-            CreateMap<Category, CategoryDto>();
-            CreateMap<CategoryDto, Category>();
+            CreateMap<Invoice, InvoiceDto>();
+            CreateMap<InvoiceDto, Invoice>();
 
-            CreateMap<Category, CategoryWithProductDto>();
-            CreateMap<CategoryWithProductDto, Category>();
 
-            CreateMap<Product, ProductDto>();
-            CreateMap<ProductDto, Product>();
-
-            CreateMap<Product, ProductWithCategoryDto>();
-            CreateMap<ProductWithCategoryDto, Product>();
 
         }
     }

@@ -5,11 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MicrosoftOrnekBackendUyg.Core.Repositories
+namespace MicrosoftOrnekBackendUyg.Core.Services
 {
-    public interface IProductRepository:IRepository<Product>
+    public interface IInvoiceService:IService<Invoice>
     {
-        Task<Product> GetWithCategoryByIdAsync(int productId);
-
+        Task<Invoice> GetWithInvoiceActivitiesByIdAsync(int InvoiceId);
     }
 }

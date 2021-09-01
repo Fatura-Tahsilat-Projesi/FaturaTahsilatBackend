@@ -7,11 +7,8 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Core.Services
 {
-    public interface IProductService:IService<Product>
+    public interface IInvoiceActivityService:IService<InvoiceActivity>
     {
-        Task<Product> GetWithCategoryByIdAsync(int productId);
-
-
 
     }
 }

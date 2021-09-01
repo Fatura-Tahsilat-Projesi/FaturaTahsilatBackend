@@ -13,12 +13,12 @@ namespace MicrosoftOrnekBackendUyg.Data.UnitOfWorks
     {
         private readonly AppDbContext _context;
 
-        private ProductRepository _productRepository;
-        private CategoryRepository _categoryRepository;
+        private InvoiceRepository _invoiceRepository;
+        private InvoiceActivityRepository _invoiceActivityRepository;
 
-        public IProductRepository Products => _productRepository = _productRepository ?? new ProductRepository(_context);
+        public IInvoiceRepository Invoices => _invoiceRepository = _invoiceRepository ?? new InvoiceRepository(_context);
 
-        public ICategoryRepository Categories => _categoryRepository = _categoryRepository ?? new CategoryRepository(_context);
+        public IInvoiceActivityRepository InvoiceActivities => _invoiceActivityRepository = _invoiceActivityRepository ?? new InvoiceActivityRepository(_context);
 
         //public ICategoryRepository Categories => throw ;
 

@@ -24,10 +24,6 @@ namespace MicrosoftOrnekBackendUyg.Data
         public DbSet<User> Users { get; set; }
 
 
-        public DbSet<Product> Products { get; set; }
-
-        public DbSet<Category> Categories { get; set; }
-
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
@@ -45,8 +41,6 @@ namespace MicrosoftOrnekBackendUyg.Data
             modelBuilder.ApplyConfiguration(new CompanyConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
 
-            modelBuilder.ApplyConfiguration(new ProductConfiguration());
-            modelBuilder.ApplyConfiguration(new CategoryConfiguration());
 
 
             //modelBuilder.Entity<InvoiceActivity>()
@@ -65,8 +59,6 @@ namespace MicrosoftOrnekBackendUyg.Data
 
 
 
-            modelBuilder.ApplyConfiguration(new ProductSeed(new int[] { 1,2 }));
-            modelBuilder.ApplyConfiguration(new CategorySeed(new int[] { 1,2 }));
 
             //modelBuilder.ApplyConfiguration(new InvoiceSeed(new int[] { 1,2 }));
         }

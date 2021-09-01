@@ -9,9 +9,9 @@ namespace MicrosoftOrnekBackendUyg.Core.UnitOfWorks
 {
     public interface IUnitOfWork
     {
-        IProductRepository Products { get; }
+        IInvoiceRepository Invoices { get; }
 
-        ICategoryRepository Categories { get; }
+        IInvoiceActivityRepository InvoiceActivities { get; }
 
         Task CommitAsync();
 

@@ -9,6 +9,6 @@ namespace MicrosoftOrnekBackendUyg.Core.Repositories
 {
     public interface IInvoiceActivityRepository:IRepository<InvoiceActivity>
     {
-        Task<InvoiceActivity> GetWithInvoiceByIdAsync(int InvoiceActivityId);
+        Task<InvoiceActivity> GetWithInvoiceActivityByIdAsync(int InvoiceActivityId);
     }
 }

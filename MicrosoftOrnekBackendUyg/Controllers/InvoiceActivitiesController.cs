@@ -36,6 +36,8 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return Ok(invoiceActivitiy);
         }
 
+
+
         [HttpPost]
         public async Task<IActionResult> Save(InvoiceActivity invoiceActivity)
         {

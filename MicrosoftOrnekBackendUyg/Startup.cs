@@ -39,8 +39,9 @@ namespace MicrosoftOrnekBackendUyg
             services.AddAutoMapper(typeof(Startup));
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
             services.AddScoped(typeof(IService<>), typeof(Service.Services.Service<>));
-            services.AddScoped<ICategoryService, CategoryService>();
-            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IInvoiceService, InvoiceService>();
+            services.AddScoped<IInvoiceActivityService, InvoiceActivityService>();
+
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -63,6 +64,7 @@ namespace MicrosoftOrnekBackendUyg
             //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "TodoApi", Version = "v1" });
             //});
             services.AddCors();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

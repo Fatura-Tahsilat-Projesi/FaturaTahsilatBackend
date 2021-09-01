@@ -27,6 +27,14 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return Ok(companies);
         }
 
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var company = await _companyService.GetByIdAsync(id);
+
+            return Ok(company);
+        }
+
 
         [HttpPost]
         public async Task<IActionResult> Save(Company company)
@@ -36,6 +44,23 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
 
 
+        [HttpPut]
+        public IActionResult Update(Company company)
+        {
+            var updateCompany = _companyService.Update(company);
+
+            return NoContent();
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult Remove(int id)
+        {
+            var company = _companyService.GetByIdAsync(id).Result;
+
+            _companyService.Remove(company);
+            return NoContent();
+        }
 
     }
 }

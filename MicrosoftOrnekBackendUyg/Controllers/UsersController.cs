@@ -26,6 +26,16 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return Ok(users);
         }
 
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id)
+        {
+            var user = await _userService.GetByIdAsync(id);
+
+            return Ok(user);
+        }
+
+
         [HttpPost]
         public async Task<IActionResult> Save(User user)
         {
@@ -34,5 +44,22 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
 
 
+        [HttpPut]
+        public IActionResult Update(User user)
+        {
+            var updateUser = _userService.Update(user);
+
+            return NoContent();
+        }
+
+
+        [HttpDelete("{id}")]
+        public IActionResult Remove(int id)
+        {
+            var user = _userService.GetByIdAsync(id).Result;
+
+            _userService.Remove(user);
+            return NoContent();
+        }
     }
 }
