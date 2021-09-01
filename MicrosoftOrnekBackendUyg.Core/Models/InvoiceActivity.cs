@@ -19,9 +19,11 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public int CompanyId { get; set; }
         public DateTime TransactionDate { get; set; }
         public int StatusCode { get; set; }
-
+        [JsonIgnore]
         public virtual User User { get; set; }
+        [JsonIgnore]
         public virtual Invoice Invoice { get; set; }
+        [JsonIgnore]
         public virtual Company Company { get; set; }
 
         //public virtual List<Invoice> Invoices { get; set; }
