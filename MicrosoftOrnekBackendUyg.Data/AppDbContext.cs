@@ -58,9 +58,12 @@ namespace MicrosoftOrnekBackendUyg.Data
 
 
 
+            modelBuilder.ApplyConfiguration(new CompanySeed(new int[] { 1, 2, 3, 4, 5, 6 }));
+            modelBuilder.ApplyConfiguration(new UserSeed(new int[] { 1, 2, 3 }));
+            modelBuilder.ApplyConfiguration(new InvoiceSeed(new int[] { 1,2,3,4,5,6 }));
+            modelBuilder.ApplyConfiguration(new InvoiceActivitySeed(new int[] { 1, 2, 3, 4, 5, 6 }));
 
 
-            //modelBuilder.ApplyConfiguration(new InvoiceSeed(new int[] { 1,2 }));
         }
 
     }
