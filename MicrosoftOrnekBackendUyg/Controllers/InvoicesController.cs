@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MicrosoftOrnekBackendUyg.Core.Models;
@@ -11,6 +12,7 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class InvoicesController : ControllerBase

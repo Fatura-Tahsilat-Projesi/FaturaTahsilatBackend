@@ -14,7 +14,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Repositories
         Task<IEnumerable<TEntity>> GetAllAsync();
 
         Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate);
-
+        IQueryable<TEntity> WhereAuth(Expression<Func<TEntity, bool>> predicate);
         Task<TEntity> SingleOrDefaultAsync(Expression<Func<TEntity, bool>> predicate);
 
         Task AddAsync(TEntity entity);
@@ -26,5 +26,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Repositories
         void RemoveRange(IEnumerable<TEntity> entities);
 
         TEntity Update(TEntity entity);
+
+        TEntity GetInclude(Expression<Func<TEntity, bool>> expression, string include);
     }
 }

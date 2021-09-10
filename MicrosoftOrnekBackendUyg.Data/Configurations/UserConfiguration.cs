@@ -20,12 +20,12 @@ namespace MicrosoftOrnekBackendUyg.Data.Configurations
             builder.Property(x => x.Surname).IsRequired().HasMaxLength(200);
             builder.Property(x => x.TcNu).IsRequired();
             builder.Property(x => x.Address).IsRequired();
-            builder.Property(x => x.Mail).IsRequired();
+            builder.Property(x => x.Email).IsRequired();
             builder.Property(x => x.Iban).IsRequired();
 
 
 
-            builder.ToTable("Users");
+            builder.ToTable("CustomUsers");
         }
     }
 }

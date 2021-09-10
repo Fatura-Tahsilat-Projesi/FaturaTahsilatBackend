@@ -19,6 +19,137 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                 .HasAnnotation("ProductVersion", "5.0.9")
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("RoleId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens");
+                });
+
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Company", b =>
                 {
                     b.Property<int>("Id")
@@ -148,7 +279,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             DueDate = new DateTime(2021, 9, 1, 13, 35, 0, 0, DateTimeKind.Unspecified),
                             ExcludingVat = 80m,
                             InvoiceNu = 1,
-                            InvoiceType = 0,
+                            InvoiceType = 1,
                             IsComplete = 0,
                             Name = "Elektrik Faturası Örneği",
                             StatusCode = 0,
@@ -163,7 +294,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             DueDate = new DateTime(2021, 9, 2, 10, 5, 0, 0, DateTimeKind.Unspecified),
                             ExcludingVat = 110m,
                             InvoiceNu = 2,
-                            InvoiceType = 1,
+                            InvoiceType = 2,
                             IsComplete = 1,
                             Name = "Su Faturası Örneği",
                             StatusCode = 1,
@@ -178,7 +309,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             DueDate = new DateTime(2021, 9, 3, 11, 5, 0, 0, DateTimeKind.Unspecified),
                             ExcludingVat = 140m,
                             InvoiceNu = 3,
-                            InvoiceType = 1,
+                            InvoiceType = 3,
                             IsComplete = 1,
                             Name = "Doğalgaz Faturası Örneği",
                             StatusCode = 1,
@@ -193,7 +324,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             DueDate = new DateTime(2021, 9, 4, 12, 5, 0, 0, DateTimeKind.Unspecified),
                             ExcludingVat = 40m,
                             InvoiceNu = 4,
-                            InvoiceType = 1,
+                            InvoiceType = 4,
                             IsComplete = 1,
                             Name = "İnternet Faturası Örneği",
                             StatusCode = 1,
@@ -208,7 +339,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             DueDate = new DateTime(2021, 9, 5, 12, 25, 0, 0, DateTimeKind.Unspecified),
                             ExcludingVat = 30m,
                             InvoiceNu = 5,
-                            InvoiceType = 1,
+                            InvoiceType = 5,
                             IsComplete = 1,
                             Name = "Mobil Fatura Örneği",
                             StatusCode = 1,
@@ -223,7 +354,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             DueDate = new DateTime(2021, 9, 6, 15, 5, 25, 0, DateTimeKind.Unspecified),
                             ExcludingVat = 40m,
                             InvoiceNu = 6,
-                            InvoiceType = 1,
+                            InvoiceType = 6,
                             IsComplete = 1,
                             Name = "Tv Yayın Faturası Örneği",
                             StatusCode = 1,
@@ -339,17 +470,20 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Iban")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Mail")
+                    b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Iban")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("PhoneNu")
                         .HasColumnType("nvarchar(max)");
@@ -369,7 +503,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("CustomUsers");
 
                     b.HasData(
                         new
@@ -378,8 +512,8 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             Address = "Erzurum",
                             Authorization = 2,
                             CreatedAt = new DateTime(2021, 9, 1, 10, 25, 0, 0, DateTimeKind.Unspecified),
+                            Email = "muhammedkaradastr@gmail.com",
                             Iban = 1,
-                            Mail = "muhammedkaradastr@gmail.com",
                             Name = "Muhammed ",
                             PhoneNu = "05342906884",
                             Surname = "Karadaş1",
@@ -392,8 +526,8 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             Address = "İstanbul",
                             Authorization = 1,
                             CreatedAt = new DateTime(2021, 9, 2, 12, 25, 0, 0, DateTimeKind.Unspecified),
+                            Email = "muti5@windowslive.com",
                             Iban = 2,
-                            Mail = "muti5@windowslive.com",
                             Name = "Muhammed",
                             PhoneNu = "05342906884",
                             Surname = "Karadaş2",
@@ -406,14 +540,151 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                             Address = "Erzurum",
                             Authorization = 0,
                             CreatedAt = new DateTime(2021, 9, 3, 15, 35, 0, 0, DateTimeKind.Unspecified),
+                            Email = "muti323@gmail.com",
                             Iban = 3,
-                            Mail = "muti323@gmail.com",
                             Name = "Muhammed",
                             PhoneNu = "05342906884",
                             Surname = "Karadaş3",
                             TcNu = 3,
                             UserName = "normaluser"
                         });
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.UserApp", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<string>("City")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers");
+                });
+
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.UserRefreshToken", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Code")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<DateTime>("Expiration")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("UserRefreshTokens");
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
+                {
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.UserApp", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
+                {
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.UserApp", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<string>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.UserApp", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
+                {
+                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.UserApp", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>

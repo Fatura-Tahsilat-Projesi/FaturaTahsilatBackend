@@ -10,6 +10,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Repositories
     public interface IUserRepository:IRepository<User>
     {
         Task<User> GetWithInvoiceByIdAsync(int UserId);
-
+        Task<User> Authenticate(int id);
+        string CreateTokenAsync(TokenDescriptor descriptor);
     }
 }

@@ -66,5 +66,15 @@ namespace MicrosoftOrnekBackendUyg.Data.Repositories
             _context.Entry(entity).State = EntityState.Modified;
             return entity;
         }
+
+        public TEntity GetInclude(Expression<Func<TEntity, bool>> expression, string include)
+        {
+            return this._dbSet.Include(include).FirstOrDefault(expression);
+        }
+
+        public IQueryable<TEntity> WhereAuth(Expression<Func<TEntity, bool>> predicate)
+        {
+            return _dbSet.Where(predicate);
+        }
     }
 }

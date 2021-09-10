@@ -13,6 +13,8 @@ namespace MicrosoftOrnekBackendUyg.Core.UnitOfWorks
 
         IInvoiceActivityRepository InvoiceActivities { get; }
 
+        IUserRepository UserRepository { get; }
+
         Task CommitAsync();
 
         void Commit();

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using MicrosoftOrnekBackendUyg.Data.Configurations;
 using MicrosoftOrnekBackendUyg.Data.Seeds;
@@ -12,7 +14,7 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Data
 {
-    public class AppDbContext:DbContext
+    public class AppDbContext: IdentityDbContext<UserApp, IdentityRole, string>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
@@ -23,6 +25,7 @@ namespace MicrosoftOrnekBackendUyg.Data
         public DbSet<Company> Companies { get; set; }
         public DbSet<User> Users { get; set; }
 
+        public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -34,7 +37,7 @@ namespace MicrosoftOrnekBackendUyg.Data
 
             //modelBuilder.Entity<Invoice>().HasMany(i => i.Invoice).WithRequired().WillCascadeOnDelete(false);
 
-
+            modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
             modelBuilder.ApplyConfiguration(new InvoiceConfiguration());
             
             modelBuilder.ApplyConfiguration(new InvoiceActivityConfiguration());
@@ -63,7 +66,7 @@ namespace MicrosoftOrnekBackendUyg.Data
             modelBuilder.ApplyConfiguration(new InvoiceSeed(new int[] { 1,2,3,4,5,6 }));
             modelBuilder.ApplyConfiguration(new InvoiceActivitySeed(new int[] { 1, 2, 3, 4, 5, 6 }));
 
-
+            base.OnModelCreating(modelBuilder);
         }
 
     }
