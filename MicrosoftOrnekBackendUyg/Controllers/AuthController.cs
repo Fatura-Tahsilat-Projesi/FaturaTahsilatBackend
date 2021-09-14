@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using MicrosoftOrnekBackendUyg.Core.DTOs;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using MicrosoftOrnekBackendUyg.Core.Services;
@@ -16,7 +17,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
     {
 
         private readonly IAuthService _authService;
-
+        private readonly ILogService _logService;
         public AuthController(IAuthService authService)
         {
             _authService = authService;
