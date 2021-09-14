@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using MicrosoftOrnekBackendUyg.Core.Repositories;
@@ -15,7 +16,7 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 {
     public class UserService : Service<User>, IUserService
     {
-        public UserService(IUnitOfWork unitOfWork, IRepository<User> repository) : base(unitOfWork, repository)
+        public UserService(IUnitOfWork unitOfWork, IRepository<User> repository, ILogger<User> logger) : base(unitOfWork, repository, logger)
         {
 
         }

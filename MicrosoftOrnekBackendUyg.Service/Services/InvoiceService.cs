@@ -1,4 +1,5 @@
-﻿using MicrosoftOrnekBackendUyg.Core.Models;
+﻿using Microsoft.Extensions.Logging;
+using MicrosoftOrnekBackendUyg.Core.Models;
 using MicrosoftOrnekBackendUyg.Core.Repositories;
 using MicrosoftOrnekBackendUyg.Core.Services;
 using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
@@ -12,7 +13,7 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 {
     public class InvoiceService : Service<Invoice>, IInvoiceService
     {
-        public InvoiceService(IUnitOfWork unitOfWork, IRepository<Invoice> repository) : base(unitOfWork, repository)
+        public InvoiceService(IUnitOfWork unitOfWork, IRepository<Invoice> repository, ILogger<Invoice> logger) : base(unitOfWork, repository, logger)
         {
         }
 

@@ -27,6 +27,7 @@ using MicrosoftOrnekBackendUyg.Core;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using Microsoft.AspNetCore.Identity;
 using MicrosoftOrnekBackendUyg.Common;
+using Serilog.Context;
 
 namespace MicrosoftOrnekBackendUyg
 {
@@ -52,6 +53,8 @@ namespace MicrosoftOrnekBackendUyg
             services.AddScoped<IUserService, UserService> ();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
+            //services.AddScoped<ILogService, LogService>();
+
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
@@ -203,6 +206,13 @@ namespace MicrosoftOrnekBackendUyg
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
+            app.Use(async (httpContext, next) =>
+            {
+                var UserName = httpContext.User.Identity.IsAuthenticated ? httpContext.User.Identity.Name : "Guest"; //Gets user Name from user Identity  
+                LogContext.PushProperty("UserName", UserName); //Push user in LogContext;  
+                await next.Invoke();
+            }
+            );
 
             app.UseEndpoints(endpoints =>
             {

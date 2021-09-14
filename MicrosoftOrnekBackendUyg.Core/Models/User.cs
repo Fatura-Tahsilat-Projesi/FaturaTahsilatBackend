@@ -13,6 +13,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public User()
         {
             Invoices = new Collection<Invoice>();
+            Log = new Collection<Log>();
             //InvoiceActivities = new Collection<InvoiceActivity>();
         }
 
@@ -30,6 +31,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public DateTime CreatedAt { get; set; }
 
         public ICollection<Invoice> Invoices { get; set; }
+        public ICollection<Log> Log { get; set; }
         //public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
 
 

@@ -1,4 +1,5 @@
-﻿using MicrosoftOrnekBackendUyg.Core.Repositories;
+﻿using Microsoft.Extensions.Logging;
+using MicrosoftOrnekBackendUyg.Core.Repositories;
 using MicrosoftOrnekBackendUyg.Core.Services;
 using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
 using System;
@@ -14,11 +15,22 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
     {
         public readonly IUnitOfWork _unitOfWork;
         private readonly IRepository<TEntity> _repository;
+        //private readonly ILogService _logger;
+        //private LogService _logService;
+        private readonly ILogger<TEntity> _logger;
 
-        public Service(IUnitOfWork unitOfWork, IRepository<TEntity> repository)
+        public LogService logService { get; set; }
+        public Service(IUnitOfWork unitOfWork, IRepository<TEntity> repository, ILogger<TEntity> logger)
         {
             _unitOfWork = unitOfWork;
             _repository = repository;
+            _logger = logger;
+            /* Test Amaçlı Serilog Kütüphanesi Kullanılmıştır. */
+            //Log.Logger = new LoggerConfiguration()
+            //    .MinimumLevel.Debug()
+            //    .WriteTo.File("logs/faturatahsilat", rollingInterval: RollingInterval.Day)
+            //    .CreateLogger();
+
         }
 
         public async Task<TEntity> AddAsync(TEntity entity)
@@ -27,6 +39,8 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
             await _unitOfWork.CommitAsync();
 
+            _logger.LogInformation("Ekleme İşlemi Yapıldı. Ekleme Yapılan Model => " + entity);
+           
             return entity;
         }
 
@@ -41,11 +55,13 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
+            _logger.LogInformation("Tüm Verileri Listeleme İşlemi Yapıldı.");
             return await _repository.GetAllAsync();
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
         {
+            _logger.LogInformation("Id Değerine Göre Listeleme İşlemi Yapıldı. Listeleme Yapılan Id Değeri => " + id);
             return await _repository.GetByIdAsync(id);
         }
 
@@ -53,6 +69,7 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
         {
             _repository.Remove(entity);
             _unitOfWork.Commit();
+            _logger.LogInformation("Silme İşlemi Yapıldı. Silme Yapılan Model => " + entity);
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
@@ -71,11 +88,13 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
         {
             TEntity updateEntity = _repository.Update(entity);
             _unitOfWork.Commit();
+            _logger.LogInformation("Güncelleme İşlemi Yapıldı. Güncelleme Yapılan Model => " + entity);
             return updateEntity;
         }
 
         public async Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
         {
+            _logger.LogInformation("Sorgulama İşlemi Yapıldı. Sorgulama Yapılan Model => " + predicate);
             return await _repository.Where(predicate);
         }
     }

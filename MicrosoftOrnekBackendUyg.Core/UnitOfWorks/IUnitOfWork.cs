@@ -19,6 +19,7 @@ namespace MicrosoftOrnekBackendUyg.Core.UnitOfWorks
 
         void Commit();
 
+        void LogCiktiBas();
 
     }
 }

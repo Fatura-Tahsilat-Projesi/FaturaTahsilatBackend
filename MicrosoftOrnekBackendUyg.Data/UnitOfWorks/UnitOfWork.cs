@@ -24,10 +24,22 @@ namespace MicrosoftOrnekBackendUyg.Data.UnitOfWorks
         public IUserRepository UserRepository => _userRepository = _userRepository ?? new UserRepository(_context);
 
         //public ICategoryRepository Categories => throw ;
+        //private readonly ILogger _logger;
 
         public UnitOfWork(AppDbContext appDbContext)
         {
             _context = appDbContext;
+            //_logger = logger;
+            //Log.Logger = new LoggerConfiguration()
+            //     .WriteTo.Console()
+            //     .WriteTo.Debug(outputTemplate: DateTime.Now.ToString())
+            //     .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
+            //     //.WriteTo.Seq("http:// localhost:5341/")
+            //     .MinimumLevel.Information()
+            //     .Enrich.WithProperty("AppName", "Fatura Tahsilatı")
+            //     .Enrich.WithProperty("Environment", "Development")
+            //     .Enrich.WithProperty("Coder", "Muhammed")
+            //     .CreateLogger();
         }
 
         //public IProductRepository Products => throw new NotImplementedException();
@@ -43,5 +55,13 @@ namespace MicrosoftOrnekBackendUyg.Data.UnitOfWorks
         {
             await _context.SaveChangesAsync();
         }
+
+        public void LogCiktiBas()
+        {
+
+            //_logger.LogDebug("Çıktı!");
+        }
+
+
     }
 }
