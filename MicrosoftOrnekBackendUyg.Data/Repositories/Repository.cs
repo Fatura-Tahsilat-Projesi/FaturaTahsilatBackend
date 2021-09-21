@@ -24,6 +24,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Repositories
         {
             //await keywordü işlem bitene kadar o satırda kalmasını sağlar
             await _dbSet.AddAsync(entity);
+            //Serilog.Log.Information("Veri Eklendi. Bilgiler => | " + entity + " | ");
         }
 
         public async Task AddRangeAsync(IEnumerable<TEntity> entities)

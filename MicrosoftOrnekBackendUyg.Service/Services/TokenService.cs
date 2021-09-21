@@ -20,7 +20,6 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
     public class TokenService : ITokenService
     {
         private readonly UserManager<UserApp> _userManager;
-
         private readonly CustomTokenOption _tokenOption;
 
         public TokenService(UserManager<UserApp> userManager, IOptions<CustomTokenOption> options)
@@ -45,12 +44,18 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
         private IEnumerable<Claim> GetClaims(UserApp userApp, List<String> audiences)
         {
+            var roles = _userManager.GetRolesAsync(userApp).Result;
+
             var userList = new List<Claim> {
             new Claim(ClaimTypes.NameIdentifier,userApp.Id),
             new Claim(JwtRegisteredClaimNames.Email, userApp.Email),
             new Claim(ClaimTypes.Name,userApp.UserName),
             new Claim(JwtRegisteredClaimNames.Jti,Guid.NewGuid().ToString())
             };
+            foreach (var role in roles)
+            {
+                userList.Add(new Claim(ClaimTypes.Role, role));
+            }
 
             userList.AddRange(audiences.Select(x => new Claim(JwtRegisteredClaimNames.Aud, x)));
 

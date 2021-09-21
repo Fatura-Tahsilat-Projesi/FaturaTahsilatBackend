@@ -219,6 +219,42 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         });
                 });
 
+            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.CreditCards", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Balance")
+                        .HasColumnType("int");
+
+                    b.Property<int>("CVC2")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CardNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("CreditCardType")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ExpMonth")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ExpYear")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("CreditCards");
+                });
+
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>
                 {
                     b.Property<int>("InvoiceId")
@@ -457,15 +493,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Datetime")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("EventType")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Exception")
                         .HasColumnType("nvarchar(max)");

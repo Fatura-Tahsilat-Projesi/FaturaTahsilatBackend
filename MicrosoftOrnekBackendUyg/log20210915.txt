@@ -1,0 +1,9 @@
+2021-09-15 09:05:23.894 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-15 09:05:24.678 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-15 09:05:24.681 +03:00 [INF] Hosting environment: Development
+2021-09-15 09:05:24.684 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-15 09:05:24.880 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-15 09:05:25.108 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-15 09:05:25.123 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-15 09:05:25.167 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 291.6293ms

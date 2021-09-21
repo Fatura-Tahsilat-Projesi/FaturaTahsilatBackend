@@ -6,11 +6,13 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.9" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Core\MicrosoftOrnekBackendUyg.Core.csproj" />
     <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Data\MicrosoftOrnekBackendUyg.Data.csproj" />
+    <ProjectReference Include="..\MicrosoftOrnekBackendUyg.RabbitMQ\MicrosoftOrnekBackendUyg.RabbitMQ.csproj" />
   </ItemGroup>
 
 </Project>

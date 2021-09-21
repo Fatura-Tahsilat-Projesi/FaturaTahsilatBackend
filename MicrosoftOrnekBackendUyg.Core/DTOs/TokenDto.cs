@@ -8,6 +8,7 @@ namespace MicrosoftOrnekBackendUyg.Core.DTOs
 {
     public class TokenDto
     {
+        public string UserIdValue { get; set; }
         public string AccessToken { get; set; }
 
         public DateTime AccessTokenExpiration { get; set; }

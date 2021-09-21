@@ -1,0 +1,857 @@
+2021-09-20 11:58:54.259 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | hTzPxhHp6Kqzze3JZvWh5wBc0fNKyt5q9+dFjZBOsno= | 20.09.2021 21:58:54 | 
+2021-09-20 11:58:59.394 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 11:59:08.276 +03:00 [INF] 6 numaralı fatura çağırıldı.
+2021-09-20 12:00:12.893 +03:00 [INF] Fatura  Güncellendi. Bilgiler => | 6 | Tv Yayın Faturası Örneği1 | 100 | 40 | 60 | 6.09.2021 00:00:00 | 6 | 0 | 0 | 1 | 1 | 
+2021-09-20 12:00:12.968 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:00:23.796 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:00:35.312 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:00:50.922 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:01:15.806 +03:00 [INF] Fatura  Eklendi. Bilgiler => | 0 | Silinecek Fatura | 125 | 25 | 100 | 22.09.2021 00:00:00 | 2 | 0 | 0 | 1 | 1 | 
+2021-09-20 12:01:15.919 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:01:21.465 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:01:23.433 +03:00 [INF] Fatura  Silindi. Bilgiler => | 0 | Silinecek Fatura | 125 | 25 | 100 | 22.09.2021 00:00:00 | 2 | 0 | 0 | 1 | 1 | 
+2021-09-20 12:01:25.217 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:18:14.490 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | nA80taL+EGte9i1hRHw2WsnbFcqTMFe8GAfkG4vWP4M= | 20.09.2021 22:18:14 | 
+2021-09-20 12:18:19.536 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:18:34.117 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:19:54.418 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | wx41P6dQD53CVsRyzn/GNBXAW5ufxrDSE4fQmP4Pzj8= | 20.09.2021 22:19:54 | 
+2021-09-20 12:19:57.657 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:20:07.534 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:20:26.024 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:22:55.302 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:23:29.378 +03:00 [INF] Fatura  Eklendi. Bilgiler => | FaturaNu: 0 | FaturaIsim: Silinecek Fatura 2 | FaturaToplam: 125 | FaturaToplamKDV: 25 | FaturaKDVsiz: 100 | SonOdemeTarihi: 21.09.2021 00:00:00 | FaturaTipi: 3 | DurumKodu: 0 | OdenmeDurumu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 12:23:29.467 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:23:35.257 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:23:39.121 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:23:41.030 +03:00 [INF] 8 numaralı fatura çağırıldı. Bilgiler => | FaturaNu: 0 | FaturaIsim: Silinecek Fatura 2 | FaturaToplam: 125 | FaturaToplamKDV: 25 | FaturaKDVsiz: 100 | SonOdemeTarihi: 21.09.2021 00:00:00 | FaturaTipi: 3 | DurumKodu: 0 | OdenmeDurumu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 12:23:44.637 +03:00 [INF] Fatura  Güncellendi. Bilgiler => | FaturaNu: 0 | FaturaIsim: Silinecek Fatura 2 | FaturaToplam: 125 | FaturaToplamKDV: 25 | FaturaKDVsiz: 100 | SonOdemeTarihi: 21.09.2021 00:00:00 | FaturaTipi: 3 | DurumKodu: 1 | OdenmeDurumu: 1 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 12:23:44.723 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:24:29.109 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:25:43.872 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | yUZMo3j7qF9r1BImg+Eujj9KablMwP9ABcd3aj01i8M= | 20.09.2021 22:25:43 | 
+2021-09-20 12:25:47.625 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:25:49.831 +03:00 [INF] 8 numaralı fatura çağırıldı. Bilgiler => | FaturaNu: 0 | FaturaIsim: Silinecek Fatura 2 | FaturaToplam: 125 | FaturaToplamKDV: 25 | FaturaKDVsiz: 100 | SonOdemeTarihi: 21.09.2021 00:00:00 | FaturaTipi: 3 | DurumKodu: 0 | OdenmeDurumu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 12:25:52.772 +03:00 [INF] Fatura  Güncellendi. Bilgiler => | FaturaNu: 0 | FaturaIsim: Silinecek Fatura 2 | FaturaToplam: 125 | FaturaToplamKDV: 25 | FaturaKDVsiz: 100 | SonOdemeTarihi: 21.09.2021 00:00:00 | FaturaTipi: 3 | DurumKodu: 1 | OdenmeDurumu: 1 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 12:25:52.858 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:25:58.124 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:27:19.341 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:29:17.868 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 12:29:19.335 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:31:29.877 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | BmcYBj7dANIf6JLMIli/54Cixt9wZnZtM6c3b4Gzvto= | 20.09.2021 23:31:29 | 
+2021-09-20 13:31:38.869 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:31:40.327 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:31:41.997 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:31:47.538 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:31:48.297 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:37:24.354 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | ulov22awu+Ml8jiEmnbC6T0kacYhrCkqDniluo/UckE= | 20.09.2021 23:37:24 | 
+2021-09-20 13:37:29.596 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:37:31.016 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:25.334 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:27.204 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:30.230 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:31.922 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:35.095 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:40.433 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:42.744 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:46.370 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:40:59.960 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:06.566 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:10.938 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:14.455 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:26.054 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:31.272 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:33.162 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:41:35.400 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:43:39.605 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | RIjsOBUyrncpyXETl61UAmy0j8sEHw6OMrZqx7rYnvc= | 20.09.2021 23:43:39 | 
+2021-09-20 13:43:42.372 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:43:43.759 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:44:07.041 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:44:12.240 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:48:50.680 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | WsnW93mpHBhdXuRXDY+bpUQYu8URrI1jxzzfDQAENf0= | 20.09.2021 23:48:50 | 
+2021-09-20 13:48:52.588 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:48:55.968 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 8 | SonOdemeTarihi: 21.09.2021 00:00:00 | DurumKodu: 1 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:49:00.773 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:50:00.172 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:51:29.603 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:51:53.383 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:52:25.542 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:52:27.083 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:52:46.053 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:52:51.471 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:52:58.236 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:53:08.273 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:53:09.429 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:53:25.375 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:55:15.557 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | wzX5O/6f8dgbygKDpSukje/KsFcPJmFWwVZ/2/KPQNc= | 20.09.2021 23:55:15 | 
+2021-09-20 13:55:17.640 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:55:23.692 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:55:41.556 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:56:09.738 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:56:12.434 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:56:58.142 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 13:57:55.277 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 13:57:56.554 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 13:59:59.988 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:00:43.346 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | e2NhCXGjJIgtqdOcAynBOAsITpC3TT6JntrH/+xVlsk= | 21.09.2021 00:00:43 | 
+2021-09-20 14:00:44.938 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:00:46.362 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:00:57.756 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:00:58.759 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 8 | SonOdemeTarihi: 21.09.2021 00:00:00 | DurumKodu: 1 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:01:01.546 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:01:02.726 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 5 | SonOdemeTarihi: 5.09.2021 12:25:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:01:05.273 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:01:06.243 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 3 | SonOdemeTarihi: 3.09.2021 11:05:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:01:07.369 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:01:08.078 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 4 | SonOdemeTarihi: 4.09.2021 12:05:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:01:42.534 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:02:01.653 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:02:02.655 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 4 | SonOdemeTarihi: 4.09.2021 12:05:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:02:19.918 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 4 | SonOdemeTarihi: 4.09.2021 12:05:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:02:21.028 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:02:22.086 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:02:25.075 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:02:27.585 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:03:00.126 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:03:03.536 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 1 | SonOdemeTarihi: 1.09.2021 13:35:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:03:05.622 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:03:07.279 +03:00 [INF] Faturaya bağlı fatura hareketi çağırıldı. Bilgiler => | FaturaId: 2 | SonOdemeTarihi: 2.09.2021 10:05:00 | DurumKodu: 0 | FirmaId: 1 | UserId: 1 | 
+2021-09-20 14:03:14.918 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 14:03:19.350 +03:00 [INF] Tüm firmalar çağırıldı.
+2021-09-20 14:09:24.284 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | VccFlF1/FRro1WgtXu1AInJFxbf8eFwGofJaQnLcBoU= | 21.09.2021 00:09:24 | 
+2021-09-20 14:12:02.710 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:12:08.023 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:12:21.380 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:17:06.015 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | +HfB3nE8vnnLqjkldqjwcjA+Pc+9+SUkNYHIgYCrBJ8= | 21.09.2021 00:17:06 | 
+2021-09-20 14:18:08.070 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | iXqLUUWm5MqB+mAnRVkqJvN7MHzrIk3fvaun3awWybw= | 21.09.2021 00:18:08 | 
+2021-09-20 14:19:29.862 +03:00 [INF] Tüm fatura hareketleri çağırıldı.
+2021-09-20 14:21:28.910 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | LCA12WIBoUDXFPkBR+yveSPpqwiT2ZNpsrzzFyHXrI4= | 21.09.2021 00:21:28 | 
+2021-09-20 14:22:29.806 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | +GSfE2n1FZPnOcab9pB4Za2FPU0cRQKgXus9lZlQOZU= | 21.09.2021 00:22:29 | 
+2021-09-20 14:26:56.491 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | EDq1u08vQYFDEtVfbuEVVkVyg0ekf+SuRIaMOYiFfMI= | 21.09.2021 00:26:56 | 
+2021-09-20 14:26:57.042 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'UserRefreshToken.UserId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetPropertyModified(IProperty property, Boolean changeState, Boolean isModified, Boolean isConceptualNull, Boolean acceptChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.<LocalDetectChanges>g__SetPropertyModified|12_0(<>c__DisplayClass12_0& , <>c__DisplayClass12_1& , <>c__DisplayClass12_2& )
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.TryDetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Data.UnitOfWorks.UnitOfWork.CommitAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Data\UnitOfWorks\UnitOfWork.cs:line 45
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 64
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 14:27:10.085 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | uxZ4xISSuWlbviUHNQ2XRMqbDaV04NEs0Zeh/xLK4xE= | 21.09.2021 00:27:10 | 
+2021-09-20 14:27:10.344 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'UserRefreshToken.UserId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetPropertyModified(IProperty property, Boolean changeState, Boolean isModified, Boolean isConceptualNull, Boolean acceptChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.<LocalDetectChanges>g__SetPropertyModified|12_0(<>c__DisplayClass12_0& , <>c__DisplayClass12_1& , <>c__DisplayClass12_2& )
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.TryDetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Data.UnitOfWorks.UnitOfWork.CommitAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Data\UnitOfWorks\UnitOfWork.cs:line 45
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 64
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 14:31:01.096 +03:00 [ERR] Failed executing DbCommand (12ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration], [u].[userIdValue]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 14:31:01.258 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MicrosoftOrnekBackendUyg.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c2ac0d40-f63c-41cd-8b9a-108f8df6c9a0
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c2ac0d40-f63c-41cd-8b9a-108f8df6c9a0
+Error Number:207,State:1,Class:16
+2021-09-20 14:31:01.622 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 49
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c2ac0d40-f63c-41cd-8b9a-108f8df6c9a0
+Error Number:207,State:1,Class:16
+2021-09-20 14:31:11.949 +03:00 [ERR] Failed executing DbCommand (4ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration], [u].[userIdValue]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 14:31:11.955 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MicrosoftOrnekBackendUyg.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c2ac0d40-f63c-41cd-8b9a-108f8df6c9a0
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:c2ac0d40-f63c-41cd-8b9a-108f8df6c9a0
+Error Number:207,State:1,Class:16
+2021-09-20 14:31:12.218 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 49
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:c2ac0d40-f63c-41cd-8b9a-108f8df6c9a0
+Error Number:207,State:1,Class:16
+2021-09-20 14:32:54.320 +03:00 [ERR] Failed executing DbCommand (7ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration], [u].[userIdValue]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 14:32:54.452 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MicrosoftOrnekBackendUyg.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3e391db6-b51c-4ee1-a737-4d8b831feaf1
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:3e391db6-b51c-4ee1-a737-4d8b831feaf1
+Error Number:207,State:1,Class:16
+2021-09-20 14:32:54.829 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 49
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:3e391db6-b51c-4ee1-a737-4d8b831feaf1
+Error Number:207,State:1,Class:16
+2021-09-20 14:33:55.324 +03:00 [ERR] Failed executing DbCommand (8ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration], [u].[userIdValue]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 14:33:55.453 +03:00 [ERR] An exception occurred while iterating over the results of a query for context type 'MicrosoftOrnekBackendUyg.Data.AppDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d8f15235-cb08-465d-8609-72dca7530983
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:d8f15235-cb08-465d-8609-72dca7530983
+Error Number:207,State:1,Class:16
+2021-09-20 14:33:55.818 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'userIdValue'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__277_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 49
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ClientConnectionId:d8f15235-cb08-465d-8609-72dca7530983
+Error Number:207,State:1,Class:16
+2021-09-20 14:35:39.927 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | X4CrPGgkSDTTseCmID+mUvhcI6wXH/3N5BqDlW0MswM= | 21.09.2021 00:35:39 | 
+2021-09-20 14:37:10.322 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | L07EfjgCiZ3bnP4IdK3aAIs9WBoE8z6rFEcC+IO+KOk= | 21.09.2021 00:37:10 | 
+2021-09-20 14:37:10.810 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'UserRefreshToken.UserId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetPropertyModified(IProperty property, Boolean changeState, Boolean isModified, Boolean isConceptualNull, Boolean acceptChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.<LocalDetectChanges>g__SetPropertyModified|12_0(<>c__DisplayClass12_0& , <>c__DisplayClass12_1& , <>c__DisplayClass12_2& )
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.TryDetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Data.UnitOfWorks.UnitOfWork.CommitAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Data\UnitOfWorks\UnitOfWork.cs:line 45
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 64
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 14:37:21.354 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | P+wZKg+wBBNuUVywg7bN1mM63rOIwd12ibp3/znG0Pk= | 21.09.2021 00:37:21 | 
+2021-09-20 14:37:21.652 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The property 'UserRefreshToken.UserId' is part of a key and so cannot be modified or marked as modified. To change the principal of an existing entity with an identifying foreign key, first delete the dependent and invoke 'SaveChanges', and then associate the dependent with the new principal.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetPropertyModified(IProperty property, Boolean changeState, Boolean isModified, Boolean isConceptualNull, Boolean acceptChanges)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.<LocalDetectChanges>g__SetPropertyModified|12_0(<>c__DisplayClass12_0& , <>c__DisplayClass12_1& , <>c__DisplayClass12_2& )
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.LocalDetectChanges(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.ChangeDetector.DetectChanges(IStateManager stateManager)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.ChangeTracker.DetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.TryDetectChanges()
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at MicrosoftOrnekBackendUyg.Data.UnitOfWorks.UnitOfWork.CommitAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Data\UnitOfWorks\UnitOfWork.cs:line 45
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.CreateTokenAsync(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 64
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken(LoginDto loginDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 32
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 14:38:32.840 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | tGToVUMuYUIS/xfpKfcpjlVM2ansxJtxAMj7TU4+BmQ= | 21.09.2021 00:38:32 | 
+2021-09-20 14:50:12.363 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | tH5upJcVEP/9laybHJ2gxkC72ogTTF75bo+n30f/vK8= | 21.09.2021 00:50:12 | 
+2021-09-20 14:51:21.959 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | M6aozVjIxo3vTQQ5gL1Cvco7sXinfqbWUPzYpzH/Eto= | 21.09.2021 00:51:21 | 
+2021-09-20 14:52:02.513 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | OAUh25SSxdInR6RWQd1bXLtWm5E+3mzyNjPMX0OxnMo= | 21.09.2021 00:52:02 | 
+2021-09-20 14:52:16.506 +03:00 [INF] Tüm faturalar çağırıldı.
+2021-09-20 15:35:17.599 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | UBNg34gVfEMM4c+JOWbJy3aJeMADefA25UmkwC5EkyE= | 21.09.2021 01:35:17 | 
+2021-09-20 15:37:41.304 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentNullException: Value cannot be null. (Parameter 'principal')
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetUserAsync(ClaimsPrincipal principal)
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 143
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 15:58:41.913 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method73(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:04:27.232 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AspUserDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.AspUserDto
+   at lambda_method73(Closure , Object , AspUserDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:07:13.140 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AspUserDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.AspUserDto
+   at lambda_method73(Closure , Object , AspUserDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:15:50.973 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AspUserDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.AspUserDto
+   at lambda_method76(Closure , Object , AspUserDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:15:55.196 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | Ea/FVSJ3dJLKnwfV1Mj/JIiq64v7+XBgdDoMWj+pMfg= | 21.09.2021 02:15:55 | 
+2021-09-20 16:15:55.798 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AspUserDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.AspUserDto
+   at lambda_method76(Closure , Object , AspUserDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:16:25.164 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AspUserDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.AspUserDto
+   at lambda_method76(Closure , Object , AspUserDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:18:28.392 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> AspUserDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.AspUserDto
+   at lambda_method77(Closure , Object , AspUserDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:19:36.535 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | 9iUiCflFqdbtjryIrq4JSGhDmw1h0mFJI0m5awAzDz8= | 21.09.2021 02:19:36 | 
+2021-09-20 16:19:37.540 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method260(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:21:11.265 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method77(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:26:52.591 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method76(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:27:24.955 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method76(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetAllUserAsync() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 147
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetAllUser() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 73
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:30:41.682 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | rsMi/n1sZqrpi9jglXrtI+A8EXgrIillPk+tSYb+0j8= | 21.09.2021 02:30:41 | 
+2021-09-20 16:33:36.930 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | CYOJuVWEDXDH6B9TPKPfVfgwXGXuejoDipN06PBQY3I= | 21.09.2021 02:33:36 | 
+2021-09-20 16:35:31.916 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | NNddjyuzmvaYZBLhmWXI4Ote6I8xeqyNw+NhMrkYDsU= | 21.09.2021 02:35:31 | 
+2021-09-20 16:38:08.785 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | qsybTWnKpFBkhYiJN1kr6Gia7MpwHkQZ+A6q7itz3Mo= | 21.09.2021 02:38:08 | 
+2021-09-20 16:38:54.161 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | aV0dUytkpGubZHZMx48jzVCZ2d+q8thzGaXsdtqs9Vg= | 21.09.2021 02:38:53 | 
+2021-09-20 16:39:18.552 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method261(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetByIdUserAsync(Int32 id) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 156
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetByIdUser(Int32 id) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 79
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 16:40:12.636 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | SbG/qbsvNRd5D63gQ5jK716wo6xO5j8vcYKfxEXuVo0= | 21.09.2021 02:40:12 | 
+2021-09-20 16:56:37.478 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | gXSVZ9nvdju5Ik06sO452u8x4As1RPgTZcqxj3mSC5E= | 21.09.2021 02:56:37 | 
+2021-09-20 16:58:17.976 +03:00 [INF] Token kontrol edildi ve veritabanında bulundu. Bigiler => | SjebZ/X5trfK61oUeK7UGGvOwxoV7H3HmBNBEZOdOp8= | 21.09.2021 02:58:17 | 
+2021-09-20 16:59:05.304 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> UserAppDto
+System.Object -> MicrosoftOrnekBackendUyg.Core.DTOs.UserAppDto
+   at lambda_method258(Closure , Object , UserAppDto , ResolutionContext )
+   at MicrosoftOrnekBackendUyg.Service.Services.AuthService.GetByIdUserAsync(UserAppDto UserAppDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg.Service\Services\AuthService.cs:line 157
+   at MicrosoftOrnekBackendUyg.Controllers.AuthController.GetByIdUser(UserAppDto userAppDto) in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Controllers\AuthController.cs:line 79
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)

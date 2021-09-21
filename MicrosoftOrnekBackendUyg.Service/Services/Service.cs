@@ -39,7 +39,7 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
             await _unitOfWork.CommitAsync();
 
-            _logger.LogInformation("Ekleme İşlemi Yapıldı. Ekleme Yapılan Model => " + entity);
+            //_logger.LogInformation("Ekleme İşlemi Yapıldı. Ekleme Yapılan Model => " + entity.ToString());
            
             return entity;
         }
@@ -55,13 +55,13 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
         public async Task<IEnumerable<TEntity>> GetAllAsync()
         {
-            _logger.LogInformation("Tüm Verileri Listeleme İşlemi Yapıldı.");
+            //_logger.LogInformation("Tüm Verileri Listeleme İşlemi Yapıldı.");
             return await _repository.GetAllAsync();
         }
 
         public async Task<TEntity> GetByIdAsync(int id)
         {
-            _logger.LogInformation("Id Değerine Göre Listeleme İşlemi Yapıldı. Listeleme Yapılan Id Değeri => " + id);
+            //_logger.LogInformation("Id Değerine Göre Listeleme İşlemi Yapıldı. Listeleme Yapılan Id Değeri => " + id);
             return await _repository.GetByIdAsync(id);
         }
 
@@ -69,7 +69,7 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
         {
             _repository.Remove(entity);
             _unitOfWork.Commit();
-            _logger.LogInformation("Silme İşlemi Yapıldı. Silme Yapılan Model => " + entity);
+            //_logger.LogInformation("Silme İşlemi Yapıldı. Silme Yapılan Model => " + entity);
         }
 
         public void RemoveRange(IEnumerable<TEntity> entities)
@@ -88,13 +88,13 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
         {
             TEntity updateEntity = _repository.Update(entity);
             _unitOfWork.Commit();
-            _logger.LogInformation("Güncelleme İşlemi Yapıldı. Güncelleme Yapılan Model => " + entity);
+            //_logger.LogInformation("Güncelleme İşlemi Yapıldı. Güncelleme Yapılan Model => " + entity);
             return updateEntity;
         }
 
         public async Task<IEnumerable<TEntity>> Where(Expression<Func<TEntity, bool>> predicate)
         {
-            _logger.LogInformation("Sorgulama İşlemi Yapıldı. Sorgulama Yapılan Model => " + predicate);
+            //_logger.LogInformation("Sorgulama İşlemi Yapıldı. Sorgulama Yapılan Model => " + predicate);
             return await _repository.Where(predicate);
         }
     }

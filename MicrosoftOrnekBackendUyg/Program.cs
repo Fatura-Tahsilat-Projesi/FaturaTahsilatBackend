@@ -44,18 +44,20 @@ namespace MicrosoftOrnekBackendUyg
                    new SqlColumn("UserName", SqlDbType.VarChar)
                }
             };
-
+             
             Log.Logger = new LoggerConfiguration()
              .WriteTo.Console()
              .WriteTo.Debug(outputTemplate: DateTime.Now.ToString())
              .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
+             .WriteTo.Seq(serverUrl: "http://localhost:5341")
              .Enrich.FromLogContext()
              .WriteTo
              .MSSqlServer(
                 connectionString: "Data Source=DESKTOP-GA0KMBM;Initial Catalog=InvoiceCollection2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "Log" },
                 null, null, LogEventLevel.Information, null, null, null, null)
-             .MinimumLevel.Information()
+             .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
+             //.MinimumLevel.Information()
              .CreateLogger();
 
             Serilog.Debugging.SelfLog.Enable(msg =>
@@ -65,26 +67,26 @@ namespace MicrosoftOrnekBackendUyg
             });
 
 
-            CreateHostBuilder(args).Build().Run();
+            //CreateHostBuilder(args).Build().Run();
 
             //Log.Logger = new LoggerConfiguration()
             //    .ReadFrom.Configuration(configuration)
             //    .CreateLogger();
 
-            //try
-            //{
-            //    CreateHostBuilder(args).Build().Run();
-            //    return;
-            //}
-            //catch (Exception ex)
-            //{
-            //    Log.Fatal(ex, "Host terminated unexpectedly");
-            //    return;
-            //}
-            //finally
-            //{
-            //    Log.CloseAndFlush();
-            //}
+            try
+            {
+                CreateHostBuilder(args).Build().Run();
+                return;
+            }
+            catch (Exception ex)
+            {
+                Log.Fatal(ex, "Host terminated unexpectedly");
+                return;
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
 
         }
 

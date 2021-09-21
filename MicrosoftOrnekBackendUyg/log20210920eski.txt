@@ -1,0 +1,407 @@
+2021-09-20 09:19:40.765 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 09:23:06.009 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 09:23:07.590 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 09:23:07.596 +03:00 [INF] Hosting environment: Development
+2021-09-20 09:23:07.599 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 09:23:07.650 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 09:23:08.113 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 09:23:08.120 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 09:23:08.164 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 516.5707ms
+2021-09-20 09:37:08.414 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 09:37:08.422 +03:00 [INF] CORS policy execution successful.
+2021-09-20 09:37:08.428 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 13.7195ms
+2021-09-20 09:37:08.440 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 09:37:08.443 +03:00 [INF] CORS policy execution successful.
+2021-09-20 09:37:08.636 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 09:37:08.642 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 09:37:08.713 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 09:37:10.283 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 09:37:10.797 +03:00 [INF] Executed DbCommand (72ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 09:37:11.189 +03:00 [INF] Executed DbCommand (40ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 09:37:11.499 +03:00 [INF] Executed DbCommand (170ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2021-09-20 09:37:11.538 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 09:37:11.591 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 2866.5886ms
+2021-09-20 09:37:11.597 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 09:37:11.607 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 201 - application/json;+charset=utf-8 3166.4522ms
+2021-09-20 09:37:16.027 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/invoices/ - -
+2021-09-20 09:37:16.030 +03:00 [INF] CORS policy execution successful.
+2021-09-20 09:37:16.034 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/invoices/ - - - 204 - - 6.2005ms
+2021-09-20 09:37:16.046 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices/ application/json;+charset=UTF-8 -
+2021-09-20 09:37:16.049 +03:00 [INF] CORS policy execution successful.
+2021-09-20 09:37:16.157 +03:00 [INF] Successfully validated the token.
+2021-09-20 09:37:16.164 +03:00 [INF] Authorization was successful.
+2021-09-20 09:37:16.168 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg)'
+2021-09-20 09:37:16.176 +03:00 [INF] Route matched with {action = "GetAll", controller = "Invoices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller MicrosoftOrnekBackendUyg.Controllers.InvoicesController (MicrosoftOrnekBackendUyg).
+2021-09-20 09:37:16.218 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 09:37:16.406 +03:00 [INF] Tüm Verileri Listeleme İşlemi Yapıldı.
+2021-09-20 09:37:16.427 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [ı].[InvoiceId], [ı].[CompanyId], [ı].[DueDate], [ı].[ExcludingVat], [ı].[InvoiceNu], [ı].[InvoiceType], [ı].[IsComplete], [ı].[Name], [ı].[StatusCode], [ı].[Total], [ı].[TotalVat], [ı].[UserId]
+FROM [Invoices] AS [ı]
+2021-09-20 09:37:16.486 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MicrosoftOrnekBackendUyg.DTOs.InvoiceDto, MicrosoftOrnekBackendUyg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 09:37:16.498 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg) in 318.1802ms
+2021-09-20 09:37:16.502 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg)'
+2021-09-20 09:37:16.507 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices/ application/json;+charset=UTF-8 - - 200 - application/json;+charset=utf-8 460.3844ms
+2021-09-20 10:18:59.976 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 10:19:00.787 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 10:19:00.791 +03:00 [INF] Hosting environment: Development
+2021-09-20 10:19:00.794 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 10:19:00.845 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 10:19:01.097 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 10:19:01.105 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 10:19:01.143 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 300.9423ms
+2021-09-20 10:19:10.567 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:19:10.573 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:10.579 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 12.3045ms
+2021-09-20 10:19:10.584 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:19:10.588 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:10.654 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:19:10.659 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:10.702 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:19:11.839 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:19:12.571 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 10:19:12.886 +03:00 [INF] Executed DbCommand (7ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 10:19:13.017 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2021-09-20 10:19:13.061 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:19:13.114 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 2401.4582ms
+2021-09-20 10:19:13.118 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:13.129 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 201 - application/json;+charset=utf-8 2544.4698ms
+2021-09-20 10:19:21.132 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/invoices/ - -
+2021-09-20 10:19:21.135 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:21.138 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/invoices/ - - - 204 - - 6.4690ms
+2021-09-20 10:19:21.149 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices/ application/json;+charset=UTF-8 -
+2021-09-20 10:19:21.152 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:21.231 +03:00 [INF] Successfully validated the token.
+2021-09-20 10:19:21.236 +03:00 [INF] Authorization was successful.
+2021-09-20 10:19:21.242 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:21.251 +03:00 [INF] Route matched with {action = "GetAll", controller = "Invoices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller MicrosoftOrnekBackendUyg.Controllers.InvoicesController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:19:21.284 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:19:21.439 +03:00 [INF] Tüm Verileri Listeleme İşlemi Yapıldı.
+2021-09-20 10:19:21.461 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [ı].[InvoiceId], [ı].[CompanyId], [ı].[DueDate], [ı].[ExcludingVat], [ı].[InvoiceNu], [ı].[InvoiceType], [ı].[IsComplete], [ı].[Name], [ı].[StatusCode], [ı].[Total], [ı].[TotalVat], [ı].[UserId]
+FROM [Invoices] AS [ı]
+2021-09-20 10:19:21.513 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MicrosoftOrnekBackendUyg.DTOs.InvoiceDto, MicrosoftOrnekBackendUyg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:19:21.525 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg) in 270.2149ms
+2021-09-20 10:19:21.528 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:21.533 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices/ application/json;+charset=UTF-8 - - 200 - application/json;+charset=utf-8 384.2689ms
+2021-09-20 10:19:23.903 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/invoices/1/invoiceActivities - -
+2021-09-20 10:19:23.906 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:23.911 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/invoices/1/invoiceActivities - - - 204 - - 7.8734ms
+2021-09-20 10:19:23.918 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices/1/invoiceActivities - -
+2021-09-20 10:19:23.921 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:23.926 +03:00 [INF] Successfully validated the token.
+2021-09-20 10:19:23.931 +03:00 [INF] Authorization was successful.
+2021-09-20 10:19:23.935 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetWithInvoiceActivitiesByIdAsync (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:23.944 +03:00 [INF] Route matched with {action = "GetWithInvoiceActivitiesById", controller = "Invoices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetWithInvoiceActivitiesByIdAsync(Int32) on controller MicrosoftOrnekBackendUyg.Controllers.InvoicesController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:19:23.955 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:19:24.087 +03:00 [INF] Executed DbCommand (9ms) [Parameters=[@__InvoiceId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[InvoiceId], [t].[CompanyId], [t].[DueDate], [t].[ExcludingVat], [t].[InvoiceNu], [t].[InvoiceType], [t].[IsComplete], [t].[Name], [t].[StatusCode], [t].[Total], [t].[TotalVat], [t].[UserId], [ı0].[Id], [ı0].[CompanyId], [ı0].[InvoiceId], [ı0].[StatusCode], [ı0].[TransactionDate], [ı0].[UserId]
+FROM (
+    SELECT TOP(2) [ı].[InvoiceId], [ı].[CompanyId], [ı].[DueDate], [ı].[ExcludingVat], [ı].[InvoiceNu], [ı].[InvoiceType], [ı].[IsComplete], [ı].[Name], [ı].[StatusCode], [ı].[Total], [ı].[TotalVat], [ı].[UserId]
+    FROM [Invoices] AS [ı]
+    WHERE [ı].[InvoiceId] = @__InvoiceId_0
+) AS [t]
+LEFT JOIN [InvoiceActivities] AS [ı0] ON [t].[InvoiceId] = [ı0].[InvoiceId]
+ORDER BY [t].[InvoiceId], [ı0].[Id]
+2021-09-20 10:19:24.111 +03:00 [INF] Executing OkObjectResult, writing value of type 'MicrosoftOrnekBackendUyg.Core.Models.Invoice'.
+2021-09-20 10:19:24.120 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetWithInvoiceActivitiesByIdAsync (MicrosoftOrnekBackendUyg) in 172.0196ms
+2021-09-20 10:19:24.125 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetWithInvoiceActivitiesByIdAsync (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:24.132 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices/1/invoiceActivities - - - 200 - application/json;+charset=utf-8 213.4036ms
+2021-09-20 10:19:24.798 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices/ application/json;+charset=UTF-8 -
+2021-09-20 10:19:24.801 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:19:24.805 +03:00 [INF] Successfully validated the token.
+2021-09-20 10:19:24.808 +03:00 [INF] Authorization was successful.
+2021-09-20 10:19:24.812 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:24.816 +03:00 [INF] Route matched with {action = "GetAll", controller = "Invoices"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller MicrosoftOrnekBackendUyg.Controllers.InvoicesController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:19:24.824 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:19:24.829 +03:00 [INF] Tüm Verileri Listeleme İşlemi Yapıldı.
+2021-09-20 10:19:24.835 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [ı].[InvoiceId], [ı].[CompanyId], [ı].[DueDate], [ı].[ExcludingVat], [ı].[InvoiceNu], [ı].[InvoiceType], [ı].[IsComplete], [ı].[Name], [ı].[StatusCode], [ı].[Total], [ı].[TotalVat], [ı].[UserId]
+FROM [Invoices] AS [ı]
+2021-09-20 10:19:24.841 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[MicrosoftOrnekBackendUyg.DTOs.InvoiceDto, MicrosoftOrnekBackendUyg, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:19:24.845 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg) in 25.1726ms
+2021-09-20 10:19:24.849 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.InvoicesController.GetAll (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:19:24.859 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices/ application/json;+charset=UTF-8 - - 200 - application/json;+charset=utf-8 60.8874ms
+2021-09-20 10:22:54.959 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 10:22:55.672 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 10:22:55.692 +03:00 [INF] Hosting environment: Development
+2021-09-20 10:22:55.714 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 10:22:55.754 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 10:22:55.954 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 10:22:55.964 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 10:22:56.001 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 251.3107ms
+2021-09-20 10:23:04.056 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:23:04.062 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:23:04.068 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 12.0718ms
+2021-09-20 10:23:04.077 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:23:04.081 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:23:04.128 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:23:04.134 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:23:04.186 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:23:05.361 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:23:05.867 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 1671.4848ms
+2021-09-20 10:23:05.921 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:23:06.452 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'MicrosoftOrnekBackendUyg.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 10:23:06.898 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 500 - text/html;+charset=utf-8 2821.5538ms
+2021-09-20 10:23:32.578 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:23:32.585 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:23:32.590 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:23:32.633 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:23:32.637 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 43.1888ms
+2021-09-20 10:23:32.640 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:23:32.687 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'MicrosoftOrnekBackendUyg.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 10:23:32.699 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 500 - text/html;+charset=utf-8 121.4482ms
+2021-09-20 10:23:32.826 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/favicon.ico - -
+2021-09-20 10:23:32.832 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/favicon.ico - - - 404 - - 5.0100ms
+2021-09-20 10:28:34.061 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 10:28:34.778 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 10:28:34.780 +03:00 [INF] Hosting environment: Development
+2021-09-20 10:28:34.785 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 10:28:34.821 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 10:28:34.956 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 10:28:34.964 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 10:28:34.997 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 177.6888ms
+2021-09-20 10:28:42.705 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:28:42.711 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:28:42.716 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 10.9448ms
+2021-09-20 10:28:42.749 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:28:42.753 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:28:42.780 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:28:42.785 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:28:42.833 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:28:44.024 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:28:44.036 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 1194.3242ms
+2021-09-20 10:28:44.041 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:28:44.130 +03:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'MicrosoftOrnekBackendUyg.Controllers.AuthController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at MicrosoftOrnekBackendUyg.Startup.<>c.<<Configure>b__5_1>d.MoveNext() in C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg\Startup.cs:line 230
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-20 10:28:44.261 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 500 - text/html;+charset=utf-8 1511.8131ms
+2021-09-20 10:29:24.117 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 10:29:24.869 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 10:29:24.872 +03:00 [INF] Hosting environment: Development
+2021-09-20 10:29:24.885 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 10:29:24.929 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 10:29:25.064 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 10:29:25.072 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 10:29:25.110 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 187.0140ms
+2021-09-20 10:29:47.581 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:29:47.587 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:29:47.591 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 9.9614ms
+2021-09-20 10:29:47.614 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:29:47.617 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:29:47.639 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:29:47.646 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:29:47.688 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:29:48.738 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:29:49.412 +03:00 [INF] Executed DbCommand (59ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 10:29:49.707 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 10:29:49.837 +03:00 [INF] Executed DbCommand (14ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2021-09-20 10:29:49.868 +03:00 [ERR] Token oluşturuldu. Bilgiler => MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto
+2021-09-20 10:29:49.880 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:29:49.949 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 2250.9217ms
+2021-09-20 10:29:49.953 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:29:49.966 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 201 - application/json;+charset=utf-8 2351.7093ms
+2021-09-20 10:33:46.863 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 10:33:47.623 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 10:33:47.626 +03:00 [INF] Hosting environment: Development
+2021-09-20 10:33:47.642 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 10:33:47.687 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 10:33:47.843 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 10:33:47.854 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 10:33:47.887 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 203.1786ms
+2021-09-20 10:33:56.540 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:33:56.547 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:33:56.552 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 12.1348ms
+2021-09-20 10:33:56.573 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:33:56.577 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:33:56.603 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:33:56.608 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:33:56.661 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:33:57.777 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:33:58.498 +03:00 [INF] Executed DbCommand (66ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 10:33:58.828 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 10:33:58.954 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2021-09-20 10:33:58.988 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:33:59.033 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 2363.1958ms
+2021-09-20 10:33:59.037 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:33:59.047 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 201 - application/json;+charset=utf-8 2474.0932ms
+2021-09-20 10:35:51.716 +03:00 [INF] User profile is available. Using 'C:\Users\muti5\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2021-09-20 10:35:52.411 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-09-20 10:35:52.414 +03:00 [INF] Hosting environment: Development
+2021-09-20 10:35:52.420 +03:00 [INF] Content root path: C:\Users\muti5\source\repos\MicrosoftOrnekBackendUyg\MicrosoftOrnekBackendUyg
+2021-09-20 10:35:52.452 +03:00 [INF] Request starting HTTP/2 GET https://localhost:44389/api/invoices - -
+2021-09-20 10:35:52.571 +03:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2021-09-20 10:35:52.579 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2021-09-20 10:35:52.608 +03:00 [INF] Request finished HTTP/2 GET https://localhost:44389/api/invoices - - - 401 - - 157.4716ms
+2021-09-20 10:36:03.600 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:36:03.605 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:36:03.611 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 11.5781ms
+2021-09-20 10:36:03.627 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58
+2021-09-20 10:36:03.631 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:36:03.655 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:36:03.662 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:36:03.707 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:36:04.793 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:36:05.469 +03:00 [INF] Executed DbCommand (58ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 10:36:05.806 +03:00 [INF] Executed DbCommand (5ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 10:36:05.822 +03:00 [ERR] Token kontrol edildi ve veritabanında bulundu. Bigiler => |EOP+PKm9z5c9z0zGJU3Yl+GqvevrQebNlBrXjDouMmE=|20.09.2021 20:36:05
+2021-09-20 10:36:05.971 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2021-09-20 10:36:06.003 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:36:06.050 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 2331.5449ms
+2021-09-20 10:36:06.055 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:36:06.064 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 58 - 201 - application/json;+charset=utf-8 2437.8320ms
+2021-09-20 10:36:46.225 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:36:46.229 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:36:46.232 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 6.8359ms
+2021-09-20 10:36:46.238 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 54
+2021-09-20 10:36:46.241 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:36:46.248 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:36:46.251 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:36:46.255 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:36:46.303 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:36:46.316 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 10:36:46.338 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 10:36:46.342 +03:00 [ERR] Token kontrol edildi ve veritabanında bulundu. Bigiler => |lscO3FCDwrvB+ODrZJAqyLxl1CPqrXqJdQeNGLUg5A0=|20.09.2021 20:36:46
+2021-09-20 10:36:46.351 +03:00 [INF] Executed DbCommand (3ms) [Parameters=[@p2='?' (Size = 450), @p0='?' (Size = 200), @p1='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [UserRefreshTokens] SET [Code] = @p0, [Expiration] = @p1
+WHERE [UserId] = @p2;
+SELECT @@ROWCOUNT;
+2021-09-20 10:36:46.355 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:36:46.359 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 101.4231ms
+2021-09-20 10:36:46.364 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:36:46.368 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 54 - 201 - application/json;+charset=utf-8 129.9868ms
+2021-09-20 10:39:51.824 +03:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - -
+2021-09-20 10:39:51.828 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:39:51.832 +03:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:44389/api/auth/CreateToken - - - 204 - - 7.6392ms
+2021-09-20 10:39:51.848 +03:00 [INF] Request starting HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 54
+2021-09-20 10:39:51.851 +03:00 [INF] CORS policy execution successful.
+2021-09-20 10:39:51.853 +03:00 [INF] Bearer was not authenticated. Failure message: No SecurityTokenValidator available for token.
+2021-09-20 10:39:51.856 +03:00 [INF] Executing endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:39:51.858 +03:00 [INF] Route matched with {action = "CreateToken", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateToken(MicrosoftOrnekBackendUyg.Core.DTOs.LoginDto) on controller MicrosoftOrnekBackendUyg.Controllers.AuthController (MicrosoftOrnekBackendUyg).
+2021-09-20 10:39:51.880 +03:00 [INF] Entity Framework Core 5.0.9 initialized 'AppDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer' with options: MigrationsAssembly=MicrosoftOrnekBackendUyg.Data 
+2021-09-20 10:39:51.889 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?' (Size = 256)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[City], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0
+2021-09-20 10:39:51.904 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@__user_Id_0='?' (Size = 450)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(2) [u].[UserId], [u].[Code], [u].[Expiration]
+FROM [UserRefreshTokens] AS [u]
+WHERE [u].[UserId] = @__user_Id_0
+2021-09-20 10:39:51.928 +03:00 [ERR] Token oluşturuldu. Bilgiler => |17914459-df1a-4b67-982a-bf4e19aa87d0|RKbtm7Wa8UpnnIFTDyDxPPMQtlbVAI1zjVRZkHHI4Nw=|20.09.2021 20:39:51
+2021-09-20 10:39:51.944 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 450), @p1='?' (Size = 200), @p2='?' (DbType = DateTime2)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [UserRefreshTokens] ([UserId], [Code], [Expiration])
+VALUES (@p0, @p1, @p2);
+2021-09-20 10:39:51.949 +03:00 [INF] Executing CreatedResult, writing value of type 'MicrosoftOrnekBackendUyg.Common.DTOs.Response`1[[MicrosoftOrnekBackendUyg.Core.DTOs.TokenDto, MicrosoftOrnekBackendUyg.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2021-09-20 10:39:51.952 +03:00 [INF] Executed action MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg) in 90.0938ms
+2021-09-20 10:39:51.961 +03:00 [INF] Executed endpoint 'MicrosoftOrnekBackendUyg.Controllers.AuthController.CreateToken (MicrosoftOrnekBackendUyg)'
+2021-09-20 10:39:51.964 +03:00 [INF] Request finished HTTP/2 POST https://localhost:44389/api/auth/CreateToken application/json;+charset=UTF-8 54 - 201 - application/json;+charset=utf-8 115.9189ms

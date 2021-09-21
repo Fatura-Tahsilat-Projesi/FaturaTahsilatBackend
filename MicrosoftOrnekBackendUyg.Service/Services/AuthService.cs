@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MicrosoftOrnekBackendUyg.Common.DTOs;
@@ -11,6 +12,7 @@ using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,13 +22,20 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly UserManager<UserApp> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        //private readonly RoleManager<AppRole> _roleManager1;
+       // private readonly IdentityUserRole<string> _userRoleManager;
+        //private readonly RoleManager<IdentityUserRole> _roleManager;
         private readonly ITokenService _tokenService;
         private readonly IRepository<UserRefreshToken> _userRefreshTokenService;
         private readonly List<Client> _clients;
-        public AuthService(IUnitOfWork unitOfWork, ITokenService tokenService, UserManager<UserApp> userManager, IRepository<UserRefreshToken> userRefreshTokenService,IOptions<List<Client>> optionsClient)
+        public AuthService(IUnitOfWork unitOfWork, ITokenService tokenService, UserManager<UserApp> userManager, IRepository<UserRefreshToken> userRefreshTokenService,IOptions<List<Client>> optionsClient, RoleManager<IdentityRole> roleManager)
         {
             _tokenService = tokenService;
             _userManager = userManager;
+            _roleManager = roleManager;
+            //_roleManager1 = roleManager1;
+            //_userRoleManager = userRoleManager;
             _unitOfWork = unitOfWork;
             _userRefreshTokenService = userRefreshTokenService;
             _clients = optionsClient.Value;
@@ -51,11 +60,15 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
             if (userRefreshToken == null)
             {
                 await _userRefreshTokenService.AddAsync(new UserRefreshToken { UserId = user.Id, Code = token.RefreshToken, Expiration = token.RefreshTokenExpiration });
+                Serilog.Log.Information("Token oluşturuldu. Bilgiler => | " + user.Id + " | "+ token.RefreshToken + " | " + token.RefreshTokenExpiration + " |");
             }
             else
             {
                 userRefreshToken.Code = token.RefreshToken;
                 userRefreshToken.Expiration = token.RefreshTokenExpiration;
+                token.UserIdValue = user.Id;
+                userRefreshToken.UserId = token.UserIdValue;
+                Serilog.Log.Information("Token kontrol edildi ve veritabanında bulundu. Bigiler => | "+token.RefreshToken + " | "+token.RefreshTokenExpiration + " | ");
             }
 
             await _unitOfWork.CommitAsync();
@@ -121,9 +134,18 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
         public async Task<Response<UserAppDto>> CreateUserAsync(CreateUserDto createUserDto)
         {
+            //if (!await _roleManager.RoleExistsAsync("Employee"))
+            //{
+            //    var role = new Microsoft.AspNetCore.Identity.IdentityRole();
+            //    role.Name = "Employee";
+            //    await _roleManager.CreateAsync(role);
+            //}
+
             var user = new UserApp { Email = createUserDto.Email, UserName = createUserDto.UserName };
 
             var result = await _userManager.CreateAsync(user, createUserDto.Password);
+
+
 
             if (!result.Succeeded)
             {
@@ -131,7 +153,76 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
                 return Response<UserAppDto>.Fail(new ErrorDto(errors, true), 400);
             }
+            await _userManager.AddToRoleAsync(user, "Employee");
             return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(user), 200);
+            
         }
+
+        public async Task<Response<UserAppDto>> GetAllUserAsync()
+        {
+
+            //var result = await _userManager.GetUserAsync(null);
+            var result = await _userManager.Users.Select(u => u.UserName).ToListAsync();
+            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(result), 200);
+            //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
+        }
+
+        public async Task<Response<UserAppDto>> GetByIdUserAsync(UserAppDto UserAppDto)
+        {
+            var user = new UserApp { Id = UserAppDto.Id };
+
+            //var result = await _userManager.GetUserIdAsync(user);
+            //var roleResult = await _userManager.GetRolesAsync(user);
+            var result = await _userManager.FindByIdAsync(user.Id);
+             
+
+            //var result = await _userManager.Users.Select(u => u.Id == id.ToString()).ToListAsync();
+            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(result), 200);
+            //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
+        }
+
+        public async Task<Response<UserAppDto>> GetByIdUserRoleAsync(UserAppDto UserAppDto)
+        {
+            var user = new UserApp { Id = UserAppDto.Id };
+
+            var roleResult = await _userManager.GetRolesAsync(user);
+            UserAppDto.RolName = roleResult[0];
+
+            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(UserAppDto), 200);
+        }
+
+        //public async Task<Response<UserAppDto>> RoleAssign(string id)
+        //{
+        //    /*//TempData["userId"] = id;
+        //    UserApp user =  _userManager.FindByIdAsync(id).Result;
+        //    List<AppRole> allRoles = _roleManager1.Roles.ToList();
+        //    List<string> userRoles = await _userManager.GetRolesAsync(user) as List<string>;
+        //    IQueryable<AppRole> roles = _roleManager1.Roles;
+
+        //    List<string> userroles = _userManager.GetRolesAsync(user).Result as List<string>;
+
+        //    foreach (var role in roles)
+        //    {
+        //        IdentityUserRole<string> rolTmp = new IdentityUserRole<string>();
+        //        rolTmp.RoleId = role.Id.ToString();
+
+        //        if (userroles.Contains(role.Name))
+        //        {
+        //            rolTmp.Exist = true;
+        //        }
+        //        else
+        //        {
+        //            r.Exist = false;
+        //        }
+        //    }*/
+
+        //    return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(""), 200);
+
+        //}
+
+        //public Task<Response<UserAppDto>> RoleAssing(string id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

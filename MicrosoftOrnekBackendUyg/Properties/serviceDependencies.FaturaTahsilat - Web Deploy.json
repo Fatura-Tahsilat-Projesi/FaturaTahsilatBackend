@@ -1,15 +1,10 @@
 {
   "dependencies": {
     "mssql1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/invoicecollectiondbserver/databases/InvoiceCollection_db",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/invoicecollection/databases/InvoiceCollectionDB",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:SqlConStr",
       "secretStore": "AzureAppSettings"
-    },
-    "apis1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/FaturaTahsilatapi/apis/FaturaTahsilatAPI",
-      "type": "apis.azure",
-      "apiEndpoint": "https://faturatahsilatapi.azure-api.net/"
     }
   }
 }

@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftOrnekBackendUyg.Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftOrnekBackendUyg.Service", "MicrosoftOrnekBackendUyg.Service\MicrosoftOrnekBackendUyg.Service.csproj", "{BD26464C-98CE-4662-B39C-AD2C7E587B83}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftOrnekBackendUyg.Common", "MicrosoftOrnekBackendUyg.Common\MicrosoftOrnekBackendUyg.Common.csproj", "{25FD5A1F-2640-462F-8988-6FEF728E5531}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicrosoftOrnekBackendUyg.Common", "MicrosoftOrnekBackendUyg.Common\MicrosoftOrnekBackendUyg.Common.csproj", "{25FD5A1F-2640-462F-8988-6FEF728E5531}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicrosoftOrnekBackendUyg.RabbitMQ", "MicrosoftOrnekBackendUyg.RabbitMQ\MicrosoftOrnekBackendUyg.RabbitMQ.csproj", "{D3E7F7C0-1783-441D-B1CC-8F37587762E1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{25FD5A1F-2640-462F-8988-6FEF728E5531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25FD5A1F-2640-462F-8988-6FEF728E5531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25FD5A1F-2640-462F-8988-6FEF728E5531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3E7F7C0-1783-441D-B1CC-8F37587762E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3E7F7C0-1783-441D-B1CC-8F37587762E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3E7F7C0-1783-441D-B1CC-8F37587762E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3E7F7C0-1783-441D-B1CC-8F37587762E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

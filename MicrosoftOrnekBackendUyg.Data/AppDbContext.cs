@@ -25,6 +25,10 @@ namespace MicrosoftOrnekBackendUyg.Data
         public DbSet<Company> Companies { get; set; }
         public DbSet<User> Users { get; set; }
 
+        //public DbSet<User>
+
+        public DbSet<CreditCards> CreditCards { get; set; } 
+
         public DbSet<UserRefreshToken> UserRefreshTokens { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

@@ -26,7 +26,11 @@
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.2.2" />
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Extensions.Logging.File" Version="2.0.0" />
     <PackageReference Include="Serilog.Sinks.MSSqlServer" Version="5.6.0" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="5.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
@@ -35,6 +39,7 @@
     <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Common\MicrosoftOrnekBackendUyg.Common.csproj" />
     <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Core\MicrosoftOrnekBackendUyg.Core.csproj" />
     <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Data\MicrosoftOrnekBackendUyg.Data.csproj" />
+    <ProjectReference Include="..\MicrosoftOrnekBackendUyg.RabbitMQ\MicrosoftOrnekBackendUyg.RabbitMQ.csproj" />
     <ProjectReference Include="..\MicrosoftOrnekBackendUyg.Service\MicrosoftOrnekBackendUyg.Service.csproj" />
   </ItemGroup>
 

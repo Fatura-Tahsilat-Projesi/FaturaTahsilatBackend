@@ -28,6 +28,9 @@ using MicrosoftOrnekBackendUyg.Core.Models;
 using Microsoft.AspNetCore.Identity;
 using MicrosoftOrnekBackendUyg.Common;
 using Serilog.Context;
+using MicrosoftOrnekBackendUyg.RabbitMQ;
+using RabbitMQ.Client;
+using System.IO;
 
 namespace MicrosoftOrnekBackendUyg
 {
@@ -58,6 +61,17 @@ namespace MicrosoftOrnekBackendUyg
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
+            
+
+
+            services.AddSingleton(serviceprovider => new ConnectionFactory() { Uri = new Uri(Configuration.GetConnectionString("RabbitMQLokal")), DispatchConsumersAsync = true });
+
+            services.AddSingleton<RabbitMQClientService>();
+            services.AddSingleton<RabbitMQPublisher>();
+
+            //services.AddScoped<IPaymentService, PaymentService>();
+            //services.AddTransient<IPaymentService, PaymentService>();
+            services.AddSingleton<IPaymentService, PaymentService>();
 
             services.AddDbContext<AppDbContext>(options =>
             {
@@ -96,7 +110,7 @@ namespace MicrosoftOrnekBackendUyg
                 };
             });
 
-
+            services.AddHostedService<OnlinePaymentProcessBackgroundService>();
             services.AddControllers();
             //services.AddDbContext<TodoContext>(opt =>
             //                                   opt.UseInMemoryDatabase("TodoList"));
@@ -194,6 +208,9 @@ namespace MicrosoftOrnekBackendUyg
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //var path = Directory.GetCurrentDirectory();
+            //loggerFactory.AddFile($"{path}\\Logs\\RabbitMQLog.txt");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -213,7 +230,7 @@ namespace MicrosoftOrnekBackendUyg
                 await next.Invoke();
             }
             );
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
