@@ -20,7 +20,8 @@ namespace MicrosoftOrnekBackendUyg.Core.Services
         Response<ClientTokenDto> CreateTokenByClient(ClientLoginDto clientLoginDto);
 
         Task<Response<UserAppDto>> CreateUserAsync(CreateUserDto createUserDto);
-        Task<Response<UserAppDto>> GetAllUserAsync();
+        Task<Response<UserAppDto>> CreateAdminUserAsync(CreateUserDto createUserDto);
+        Task<Response<List<string>>> GetAllUserAsync();
         Task<Response<UserAppDto>> GetByIdUserAsync(UserAppDto userAppDto);
         Task<Response<UserAppDto>> GetByIdUserRoleAsync(UserAppDto userAppDto);
     }

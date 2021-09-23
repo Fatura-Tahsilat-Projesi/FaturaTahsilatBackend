@@ -58,7 +58,6 @@ namespace MicrosoftOrnekBackendUyg
             services.AddScoped<ITokenService, TokenService>();
             //services.AddScoped<ILogService, LogService>();
 
-
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
             
@@ -68,10 +67,14 @@ namespace MicrosoftOrnekBackendUyg
 
             services.AddSingleton<RabbitMQClientService>();
             services.AddSingleton<RabbitMQPublisher>();
+            services.AddSingleton<IPaymentService, PaymentService>();
+
+            //services.AddSingleton<RabbitMQClientService>();
+            //services.AddSingleton<RabbitMQPublisher>();
 
             //services.AddScoped<IPaymentService, PaymentService>();
             //services.AddTransient<IPaymentService, PaymentService>();
-            services.AddSingleton<IPaymentService, PaymentService>();
+            //services.AddSingleton<IPaymentService, PaymentService>();
 
             services.AddDbContext<AppDbContext>(options =>
             {

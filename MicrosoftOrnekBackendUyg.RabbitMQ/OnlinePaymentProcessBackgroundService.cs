@@ -1,7 +1,10 @@
-﻿using Microsoft.Extensions.Hosting;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using MicrosoftOrnekBackendUyg.Core.Services;
 using MicrosoftOrnekBackendUyg.Core.UnitOfWorks;
+using MicrosoftOrnekBackendUyg.Data;
 using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
@@ -19,20 +22,27 @@ namespace MicrosoftOrnekBackendUyg.RabbitMQ
     {
         private readonly RabbitMQClientService _rabbitMQClientService;
         private IModel _channel;
+        //IUnitOfWork _unitOfWork;
         //private readonly IService<OnlinePaymentEvent> _service;
         //private readonly IService<User> _userService;
         //private readonly IService<Invoşce>
         //private readonly ILogger<OnlinePaymentProcessBackgroundService> _logger;
         //protected readonly DbContext _context;
         private IPaymentService _paymentService;
-        public OnlinePaymentProcessBackgroundService(RabbitMQClientService rabbitMQClientService, IPaymentService paymentService)
+        public IServiceScopeFactory _serviceScopeFactory;
+        private ValueTask<Invoice> guncellenecekFaturaDegeri;
+
+        public OnlinePaymentProcessBackgroundService(RabbitMQClientService rabbitMQClientService, IPaymentService paymentService, IServiceScopeFactory serviceScopeFactory)
         {
             _rabbitMQClientService = rabbitMQClientService;
             _paymentService = paymentService;
+            //_unitOfWork = unitOfWork;
             //_context = context;
             // _service = service;
             //_userService = userService;
             //_logger = logger;
+            _serviceScopeFactory = serviceScopeFactory;
+           
 
         }
 
@@ -58,42 +68,24 @@ namespace MicrosoftOrnekBackendUyg.RabbitMQ
         private Task Consumer_Received(object sender, BasicDeliverEventArgs @event)
         {
             Task.Delay(10000).Wait();
-            /*try
-            {*/
+
             var creditCards = JsonSerializer.Deserialize<OnlinePaymentEvent>(Encoding.UTF8.GetString(@event.Body.ToArray()));
-            //balance(bakiye) kontrolü
-            //var userInformation = _userService.GetByIdAsync(creditCards.UserId);
-            //var userInformation = _invoiceService.GetByIdAsync(creditCards.UserId);
-            //var userInformation = _invoiceService.PaymentUpdate(creditCards.InvoiceId);
-            _paymentService.PaymentUpdate(creditCards.InvoiceId);
-
-
-            //var balance = userInformation;
-            //Debug.Print($"Gelen userInformation = {userInformation}");
-            Invoice guncellenecekFatura = new Invoice { InvoiceId = creditCards.InvoiceId, StatusCode = 1, IsComplete = 1};
-            //_context.Entry(guncellenecekFatura).State = EntityState.Modified;
-
-
-            if (creditCards.UserId == 1)
+           
+            using (var scope = _serviceScopeFactory.CreateScope())
             {
-                //_service.Update(creditCards);
+                var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+                
+                guncellenecekFaturaDegeri = dbContext.Invoices.FindAsync(creditCards.InvoiceId);
+                guncellenecekFaturaDegeri.Result.IsComplete = 1;
+                guncellenecekFaturaDegeri.Result.StatusCode = 1;
+
+                dbContext.Invoices.Update(guncellenecekFaturaDegeri.Result);
+                var dbProcess = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
+                dbProcess.Commit();
             }
 
-
-
-
-
-            //_logger.LogInformation("Nesne Çıktısı => " + creditCards);
-            //Debug.Print(creditCards.ToString());
-            //Debug.Print($"Gelen Mesaj = {creditCards.InvoiceId}");
-            //Dispose();
             _channel.BasicAck(@event.DeliveryTag, false);
-            /*}
-            catch (Exception ex)
-            {
-
-                throw;
-            }*/
+            
             return Task.CompletedTask;
         }
 
