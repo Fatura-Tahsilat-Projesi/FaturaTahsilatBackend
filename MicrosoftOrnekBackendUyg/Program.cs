@@ -53,7 +53,7 @@ namespace MicrosoftOrnekBackendUyg
              .Enrich.FromLogContext()
              .WriteTo
              .MSSqlServer(
-                connectionString: "Data Source=DESKTOP-GA0KMBM;Initial Catalog=InvoiceCollection2;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
+                connectionString: "Server=tcp:invoicecollection.database.windows.net,1433;Initial Catalog=InvoiceCollectionDB;Persist Security Info=False;User ID=dbadmin;Password=123456Seven_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "Log" },
                 null, null, LogEventLevel.Information, null, null, null, null)
              .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
@@ -67,26 +67,26 @@ namespace MicrosoftOrnekBackendUyg
             });
 
 
-            //CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args).Build().Run();
 
             //Log.Logger = new LoggerConfiguration()
             //    .ReadFrom.Configuration(configuration)
             //    .CreateLogger();
 
-            try
-            {
-                CreateHostBuilder(args).Build().Run();
-                return;
-            }
-            catch (Exception ex)
-            {
-                Log.Fatal(ex, "Host terminated unexpectedly");
-                return;
-            }
-            finally
-            {
-                Log.CloseAndFlush();
-            }
+            //try
+            //{
+            //    CreateHostBuilder(args).Build().Run();
+            //    return;
+            //}
+            //catch (Exception ex)
+            //{
+            //    Log.Fatal(ex, "Host terminated unexpectedly");
+            //    return;
+            //}
+            //finally
+            //{
+            //    Log.CloseAndFlush();
+            //}
 
         }
 

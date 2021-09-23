@@ -1,10 +1,15 @@
 {
   "dependencies": {
     "mssql1": {
-      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/invoicecollection/databases/InvoiceCollectionDB",
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/invoicecollection/databases/MicrosoftOrnekBackendUyg_db",
       "type": "mssql.azure",
       "connectionId": "ConnectionStrings:SqlConStr",
       "secretStore": "AzureAppSettings"
+    },
+    "apis1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.ApiManagement/service/FaturaTahsilatapi/apis/MicrosoftOrnekBackendUyg",
+      "type": "apis.azure",
+      "apiEndpoint": "https://faturatahsilatapi.azure-api.net/"
     }
   }
 }

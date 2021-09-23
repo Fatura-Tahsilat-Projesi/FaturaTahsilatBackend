@@ -9,6 +9,7 @@ namespace MicrosoftOrnekBackendUyg.Common.DTOs
     {
         public T Data { get; private set; }
         public int StatusCode { get; private set; }
+        public List<string> users { get; private set;}
 
         [JsonIgnore]
         public bool IsSuccessful { get; private set; }
@@ -24,7 +25,10 @@ namespace MicrosoftOrnekBackendUyg.Common.DTOs
         {
             return new Response<T> { Data = default, StatusCode = statusCode, IsSuccessful = true };
         }
-
+        public static Response<T> Success(List<string> result, string[] users)
+        {
+            return new Response<T> { Data = default, users = result, StatusCode = 200, IsSuccessful = true };
+        }
         public static Response<T> Fail(ErrorDto errorDto, int statusCode)
         {
             return new Response<T>

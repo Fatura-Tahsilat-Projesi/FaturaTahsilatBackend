@@ -66,6 +66,12 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         {
             return Created(string.Empty, await _authService.CreateUserAsync(createUserDto));
         }
+        
+        [HttpPost]
+        public async Task<IActionResult> CreateAdminUser(CreateUserDto createUserDto)
+        {
+            return Created(string.Empty, await _authService.CreateAdminUserAsync(createUserDto));
+        }
 
         [HttpGet]
         public async Task<IActionResult> GetAllUser()

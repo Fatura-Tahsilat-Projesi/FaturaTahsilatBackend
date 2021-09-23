@@ -75,7 +75,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             //_logger.LogInformation("Fatura Güncelleme fonk.invoice => "+invoice);
             //_rabbitMQPublisher.Publish(new CreditCards() { Id = 1, Balance = 250, UserId = invoice.UserId, CardNumber = "1111", CreditCardType = 1, CVC2 = 123, ExpMonth = 9, ExpYear = 3, CreatedAt = DateTime.ParseExact("01/09/2021 10:05:00", "dd/MM/yyyy HH:mm:ss", null) });
             
-            var updateInvoice = _invoiceService.Update(invoice);
+            //--var updateInvoice = _invoiceService.Update(invoice);
             _rabbitMQPublisher.Publish(new OnlinePaymentEvent() { InvoiceId = invoice.InvoiceId });
             Serilog.Log.Information("Fatura  Güncellendi. Bilgiler => | FaturaNu: " + invoice.InvoiceNu + " | FaturaIsim: " + invoice.Name + " | FaturaToplam: " + invoice.Total + " | FaturaToplamKDV: " + invoice.TotalVat + " | FaturaKDVsiz: " + invoice.ExcludingVat + " | SonOdemeTarihi: " + invoice.DueDate + " | FaturaTipi: " + invoice.InvoiceType + " | DurumKodu: " + invoice.StatusCode + " | OdenmeDurumu: " + invoice.IsComplete + " | FirmaId: " + invoice.CompanyId + " | UserId: " + invoice.UserId + " | ");
             return NoContent();

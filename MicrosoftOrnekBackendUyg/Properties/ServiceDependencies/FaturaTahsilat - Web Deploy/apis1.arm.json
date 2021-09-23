@@ -36,7 +36,7 @@
     },
     {
       "type": "Microsoft.Resources/deployments",
-      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('FaturaTahsilatAPI', subscription().subscriptionId)))]",
+      "name": "[concat(parameters('resourceGroupName'), 'Deployment', uniqueString(concat('MicrosoftOrnekBackendUyg', subscription().subscriptionId)))]",
       "resourceGroup": "[parameters('resourceGroupName')]",
       "apiVersion": "2019-10-01",
       "dependsOn": [
@@ -94,9 +94,9 @@
             },
             {
               "type": "Microsoft.ApiManagement/service/apis",
-              "name": "FaturaTahsilatapi/FaturaTahsilatAPI",
+              "name": "FaturaTahsilatapi/MicrosoftOrnekBackendUyg",
               "properties": {
-                "displayName": "FaturaTahsilatAPI",
+                "displayName": "MicrosoftOrnekBackendUyg",
                 "apiRevision": "1",
                 "description": null,
                 "subscriptionRequired": true,

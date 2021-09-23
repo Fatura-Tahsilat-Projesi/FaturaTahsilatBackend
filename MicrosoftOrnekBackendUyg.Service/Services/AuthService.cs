@@ -15,6 +15,7 @@ using System.Linq;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
+using AutoMapper;
 
 namespace MicrosoftOrnekBackendUyg.Service.Services
 {
@@ -29,7 +30,9 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
         private readonly ITokenService _tokenService;
         private readonly IRepository<UserRefreshToken> _userRefreshTokenService;
         private readonly List<Client> _clients;
-        public AuthService(IUnitOfWork unitOfWork, ITokenService tokenService, UserManager<UserApp> userManager, IRepository<UserRefreshToken> userRefreshTokenService,IOptions<List<Client>> optionsClient, RoleManager<IdentityRole> roleManager)
+        private readonly IMapper _mapper;
+
+        public AuthService(IUnitOfWork unitOfWork, ITokenService tokenService, IMapper mapper, UserManager<UserApp> userManager, IRepository<UserRefreshToken> userRefreshTokenService,IOptions<List<Client>> optionsClient, RoleManager<IdentityRole> roleManager)
         {
             _tokenService = tokenService;
             _userManager = userManager;
@@ -39,6 +42,8 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
             _unitOfWork = unitOfWork;
             _userRefreshTokenService = userRefreshTokenService;
             _clients = optionsClient.Value;
+            _mapper = mapper;
+
         }
 
         public async Task<Response<TokenDto>> CreateTokenAsync(LoginDto loginDto)
@@ -158,12 +163,46 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
             
         }
 
-        public async Task<Response<UserAppDto>> GetAllUserAsync()
+        public async Task<Response<UserAppDto>> CreateAdminUserAsync(CreateUserDto createUserDto)
+        {
+            //if (!await _roleManager.RoleExistsAsync("Employee"))
+            //{
+                var role = new Microsoft.AspNetCore.Identity.IdentityRole();
+                role.Name = "Admin";
+                await _roleManager.CreateAsync(role);
+            //}
+
+            var user = new UserApp { Email = createUserDto.Email, UserName = createUserDto.UserName };
+
+            var result = await _userManager.CreateAsync(user, createUserDto.Password);
+
+
+
+            if (!result.Succeeded)
+            {
+                var errors = result.Errors.Select(x => x.Description).ToList();
+
+                return Response<UserAppDto>.Fail(new ErrorDto(errors, true), 400);
+            }
+            await _userManager.AddToRoleAsync(user, "Admin");
+            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(user), 200);
+
+        }
+
+
+        public async Task<Response<List<string>>> GetAllUserAsync()
         {
 
             //var result = await _userManager.GetUserAsync(null);
             var result = await _userManager.Users.Select(u => u.UserName).ToListAsync();
-            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(result), 200);
+            //var result = _userManager.Users.Include(u => u.Id).ThenInclude(ur => ur.).ToList();
+            //var result = await _userManager.GetUsersInRoleAsync("Employee");
+            /*Claim claim = new Claim("","");
+            var result = await _userManager.GetUsersForClaimAsync(claim);*/
+            //return Response<AspUserDto>.Success(_mapper.Map<AspUserDto>(result), 200);
+
+            //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
+            return  Response<List<string>>.Success(result, 200);
             //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
         }
 
