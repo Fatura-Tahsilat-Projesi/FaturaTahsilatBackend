@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MicrosoftOrnekBackendUyg.Data;
 
 namespace MicrosoftOrnekBackendUyg.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210930075643_userIdUpdateCompany")]
+    partial class userIdUpdateCompany
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -584,39 +586,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Log", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Exception")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Level")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MessageTemplate")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Properties")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset>("TimeStamp")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Log");
-                });
-
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.UserApp", b =>
                 {
                     b.Property<string>("Id")
@@ -651,9 +620,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int?>("LogId")
-                        .HasColumnType("int");
-
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -686,8 +652,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                     b.HasIndex("CompanyId");
 
                     b.HasIndex("InvoiceId");
-
-                    b.HasIndex("LogId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -801,15 +765,9 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         .WithMany("UserApps")
                         .HasForeignKey("InvoiceId");
 
-                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Log", "Log")
-                        .WithMany("UserApps")
-                        .HasForeignKey("LogId");
-
                     b.Navigation("Company");
 
                     b.Navigation("Invoice");
-
-                    b.Navigation("Log");
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Company", b =>
@@ -823,11 +781,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                 {
                     b.Navigation("InvoiceActivities");
 
-                    b.Navigation("UserApps");
-                });
-
-            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Log", b =>
-                {
                     b.Navigation("UserApps");
                 });
 #pragma warning restore 612, 618

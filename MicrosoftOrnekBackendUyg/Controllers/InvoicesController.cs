@@ -43,6 +43,22 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return Ok(_mapper.Map<IEnumerable<InvoiceDto>>(invoices));
         }
 
+        [HttpGet("{userId}/allinvoices")]
+        public async Task<IActionResult> GetAllUserInvoices(string userId)
+        {
+            var invoices = await _invoiceService.Where(x => x.UserId == userId);
+            return Ok(invoices);
+            //return Ok(_mapper.Map<IEnumerable<InvoiceDto>>(invoices));
+        }
+
+        [HttpGet("{companyId}/companyallinvoices")]
+        public async Task<IActionResult> GetAllCompanyInvoices(int companyId)
+        {
+            var invoices = await _invoiceService.Where(x => x.CompanyId == companyId);
+            return Ok(invoices);
+            //return Ok(_mapper.Map<IEnumerable<InvoiceDto>>(invoices));
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {

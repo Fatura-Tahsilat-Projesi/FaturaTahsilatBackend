@@ -23,7 +23,9 @@ namespace MicrosoftOrnekBackendUyg.Data
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceActivity> InvoiceActivities { get; set; }
         public DbSet<Company> Companies { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<CustomUser> CustomUsers { get; set; }
+        //TODO bakılacak!
+        //public DbSet<AspNetUserManager<User>> Users1 { get; set; }
 
         //public DbSet<User>
 

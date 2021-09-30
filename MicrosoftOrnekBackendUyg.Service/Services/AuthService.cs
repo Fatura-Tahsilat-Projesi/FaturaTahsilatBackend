@@ -146,7 +146,7 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
             //    await _roleManager.CreateAsync(role);
             //}
 
-            var user = new UserApp { Email = createUserDto.Email, UserName = createUserDto.UserName };
+            var user = new UserApp { Email = createUserDto.Email, UserName = createUserDto.UserName, PhoneNumber = createUserDto.PhoneNumber };
 
             var result = await _userManager.CreateAsync(user, createUserDto.Password);
 
@@ -158,9 +158,31 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
                 return Response<UserAppDto>.Fail(new ErrorDto(errors, true), 400);
             }
-            await _userManager.AddToRoleAsync(user, "Employee");
+
+            if(!await _roleManager.RoleExistsAsync(createUserDto.MemberType))
+            {
+                var role = new Microsoft.AspNetCore.Identity.IdentityRole();
+                role.Name = createUserDto.MemberType;
+                await _roleManager.CreateAsync(role);
+            }
+
+            await _userManager.AddToRoleAsync(user, createUserDto.MemberType);
+
             return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(user), 200);
             
+        }
+
+        public async Task<Response<UserAppDto>> RemoveUserAsync(UserAppDto userAppDto)
+        {
+            //throw new NotImplementedException();
+            var userTmp = new UserApp { Id = userAppDto.Id };
+            var user = await _userManager.FindByIdAsync(userTmp.Id);
+
+
+            var result = await _userManager.DeleteAsync(user);
+
+            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(result), 200);
+            //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
         }
 
         public async Task<Response<UserAppDto>> CreateAdminUserAsync(CreateUserDto createUserDto)
@@ -189,12 +211,24 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
 
         }
 
+        public async Task<Response<RoleDto>> CreateRoleAsync(RoleDto roleDto)
+        {
+            IdentityRole identityRole = new IdentityRole();
+            identityRole.Name = roleDto.CustomName;
+            var result = await _roleManager.CreateAsync(identityRole);
+            return Response<RoleDto>.Success(ObjectMapper.Mapper.Map<RoleDto>(result), 200);
+            //TODO geri dönüşte sorun oluyor doğru şekilde Dto ya dönüştürülemedi!
+        }
 
-        public async Task<Response<List<string>>> GetAllUserAsync()
+        public async Task<Response<List<UserApp>>> GetAllUserAsync()
         {
 
             //var result = await _userManager.GetUserAsync(null);
-            var result = await _userManager.Users.Select(u => u.UserName).ToListAsync();
+
+            ///var result = await _userManager.Users.Select(u => u.UserName).ToListAsync();
+
+            var result = await _userManager.Users.ToListAsync();
+
             //var result = _userManager.Users.Include(u => u.Id).ThenInclude(ur => ur.).ToList();
             //var result = await _userManager.GetUsersInRoleAsync("Employee");
             /*Claim claim = new Claim("","");
@@ -202,8 +236,14 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
             //return Response<AspUserDto>.Success(_mapper.Map<AspUserDto>(result), 200);
 
             //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
-            return  Response<List<string>>.Success(result, 200);
+            return  Response<List<UserApp>>.Success(result, 200);
             //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
+        }
+        public async Task<Response<List<IdentityRole>>> GetRolesAsync()
+        {
+            var result = await _roleManager.Roles.ToListAsync();
+
+            return Response<List<IdentityRole>>.Success(result, 200);
         }
 
         public async Task<Response<UserAppDto>> GetByIdUserAsync(UserAppDto UserAppDto)
@@ -220,14 +260,17 @@ namespace MicrosoftOrnekBackendUyg.Service.Services
             //return Response<AspUserDto>.Success(ObjectMapper.Mapper.Map<AspUserDto>(result), 200);
         }
 
-        public async Task<Response<UserAppDto>> GetByIdUserRoleAsync(UserAppDto UserAppDto)
+        public async Task<Response<UserAppDto>> GetByIdUserRoleAsync(UserAppDto userAppDto)
         {
-            var user = new UserApp { Id = UserAppDto.Id };
+            //var user = new UserApp { Id = UserAppDto.Id };
+            //--var user = GetByIdUserAsync(userAppDto);
+            var user = await _userManager.FindByIdAsync(userAppDto.Id);
+            UserApp userApp = new UserApp();
+            userApp.Id = userAppDto.Id;
+            var roleResult = await _userManager.GetRolesAsync(userApp);
+            userAppDto.RolName = roleResult[0];
 
-            var roleResult = await _userManager.GetRolesAsync(user);
-            UserAppDto.RolName = roleResult[0];
-
-            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(UserAppDto), 200);
+            return Response<UserAppDto>.Success(ObjectMapper.Mapper.Map<UserAppDto>(userAppDto), 200);
         }
 
         //public async Task<Response<UserAppDto>> RoleAssign(string id)

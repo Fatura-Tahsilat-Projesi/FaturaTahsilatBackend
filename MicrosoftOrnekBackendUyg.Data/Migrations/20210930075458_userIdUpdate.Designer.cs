@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MicrosoftOrnekBackendUyg.Data;
 
 namespace MicrosoftOrnekBackendUyg.Data.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210930075458_userIdUpdate")]
+    partial class userIdUpdate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -584,39 +586,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Log", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Exception")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Level")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("MessageTemplate")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Properties")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTimeOffset>("TimeStamp")
-                        .HasColumnType("datetimeoffset");
-
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Log");
-                });
-
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.UserApp", b =>
                 {
                     b.Property<string>("Id")
@@ -627,9 +596,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("CompanyId")
-                        .HasColumnType("int");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -650,9 +616,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
-
-                    b.Property<int?>("LogId")
-                        .HasColumnType("int");
 
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
@@ -683,11 +646,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CompanyId");
-
                     b.HasIndex("InvoiceId");
-
-                    b.HasIndex("LogId");
 
                     b.HasIndex("NormalizedEmail")
                         .HasDatabaseName("EmailIndex");
@@ -793,41 +752,22 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.UserApp", b =>
                 {
-                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Company", "Company")
-                        .WithMany("UserApps")
-                        .HasForeignKey("CompanyId");
-
                     b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Invoice", "Invoice")
                         .WithMany("UserApps")
                         .HasForeignKey("InvoiceId");
 
-                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Log", "Log")
-                        .WithMany("UserApps")
-                        .HasForeignKey("LogId");
-
-                    b.Navigation("Company");
-
                     b.Navigation("Invoice");
-
-                    b.Navigation("Log");
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Company", b =>
                 {
                     b.Navigation("Invoices");
-
-                    b.Navigation("UserApps");
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>
                 {
                     b.Navigation("InvoiceActivities");
 
-                    b.Navigation("UserApps");
-                });
-
-            modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Log", b =>
-                {
                     b.Navigation("UserApps");
                 });
 #pragma warning restore 612, 618

@@ -56,6 +56,7 @@ namespace MicrosoftOrnekBackendUyg
             services.AddScoped<IUserService, UserService> ();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<ITokenService, TokenService>();
+            services.AddScoped<ICreditCardsService, CreditCardsService>();
             //services.AddScoped<ILogService, LogService>();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();

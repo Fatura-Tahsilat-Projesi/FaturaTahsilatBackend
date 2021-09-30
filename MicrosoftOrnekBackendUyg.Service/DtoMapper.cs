@@ -15,6 +15,7 @@ namespace MicrosoftOrnekBackendUyg.Service
         {
             CreateMap<UserAppDto, UserApp>().ReverseMap();
             CreateMap<AspUserDto, UserApp>().ReverseMap();
+            //CreateMap<RoleDto, IdentityRole>().ReverseMap
             //CreateMap<AspUserDto, UserApp>().ReverseMap();
 
         }

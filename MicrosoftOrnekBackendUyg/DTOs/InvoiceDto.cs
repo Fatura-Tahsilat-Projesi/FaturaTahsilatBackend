@@ -18,6 +18,6 @@ namespace MicrosoftOrnekBackendUyg.DTOs
         public int StatusCode { get; set; }
         public int IsComplete { get; set; }
         public int CompanyId { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
     }
 }

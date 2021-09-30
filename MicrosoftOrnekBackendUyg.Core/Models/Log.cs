@@ -21,8 +21,10 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         //Denetim Türü, Information, Warning
         //public string EventType { get; set; }
         //public string Description { get; set; }
-        public int UserId { get; set; }
+        public string UserId { get; set; }
+        public ICollection<UserApp> UserApps { get; set; }
 
-        public virtual User User { get; set; }
+        //public virtual UserApp User { get; set; }
+        //public virtual User User { get; set; }
     }
 }

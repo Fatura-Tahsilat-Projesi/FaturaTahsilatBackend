@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Data.Repositories
 {
-    class UserRepository: Repository<User>, IUserRepository
+    class UserRepository: Repository<CustomUser>, IUserRepository
     {
         private AppDbContext _appDbContext { get => _context as AppDbContext; }
         public UserRepository(AppDbContext context) : base(context)
@@ -20,7 +20,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Repositories
 
         }
 
-        public  Task<User> Authenticate(int id)
+        public  Task<CustomUser> Authenticate(int id)
         {
             //int id = 1;
             //return await _appDbContext.Users
@@ -52,7 +52,7 @@ namespace MicrosoftOrnekBackendUyg.Data.Repositories
             throw new NotImplementedException();
         }
 
-        public Task<User> GetWithInvoiceByIdAsync(int UserId)
+        public Task<CustomUser> GetWithInvoiceByIdAsync(int UserId)
         {
             throw new NotImplementedException();
         }

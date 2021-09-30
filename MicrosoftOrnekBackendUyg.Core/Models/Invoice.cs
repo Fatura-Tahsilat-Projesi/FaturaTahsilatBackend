@@ -31,13 +31,15 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         //[ForeignKey("CompanyId")]
         public int CompanyId { get; set; }
         //[ForeignKey("UserId")]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
 
         public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
+        public ICollection<UserApp> UserApps { get; set; }
         [JsonIgnore]
         public virtual Company Company { get; set; }
-        
-        public virtual User User { get; set; }
- 
+        //public virtual UserApp User { get; set; }
+
+        //public virtual User User { get; set; }
+
     }
 }

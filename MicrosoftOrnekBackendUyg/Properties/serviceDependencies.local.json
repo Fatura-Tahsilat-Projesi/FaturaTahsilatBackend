@@ -4,6 +4,15 @@
       "type": "mssql.onprem",
       "connectionId": "ConnectionStrings:SqlConStr",
       "secretStore": "LocalSecretsFile"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "mssql2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Sql/servers/invoicecollection/databases/MicrosoftOrnekBackendUyg_db",
+      "type": "mssql.azure",
+      "connectionId": "ConnectionStrings:SqlConStrAzure",
+      "secretStore": "LocalSecretsFile"
     }
   }
 }

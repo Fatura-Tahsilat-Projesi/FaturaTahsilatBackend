@@ -73,10 +73,32 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             return Created(string.Empty, await _authService.CreateAdminUserAsync(createUserDto));
         }
 
+        [HttpPost]
+        public async Task<IActionResult> CreateRole(RoleDto name)
+        {
+            return Created(string.Empty, await _authService.CreateRoleAsync(name));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RemoveUser(UserAppDto userAppDto)
+        {
+            //Serilog.Log.Information("Kullanıcı  Silindi. Bilgiler => | FaturaNu: " + invoices.InvoiceNu + " | FaturaIsim: " + invoices.Name + " | FaturaToplam: " + invoices.Total + " | FaturaToplamKDV: " + invoices.TotalVat + " | FaturaKDVsiz: " + invoices.ExcludingVat + " | SonOdemeTarihi:  " + invoices.DueDate + " | FaturaTipi: " + invoices.InvoiceType + " | DurumKodu: " + invoices.StatusCode + " | OdenmeDurumu: " + invoices.IsComplete + " | FirmaId: " + invoices.CompanyId + " | UserId: " + invoices.UserId + " | ");
+            //return Ok(await _authService.RemoveUserAsync(userAppDto));
+            await _authService.RemoveUserAsync(userAppDto);
+            //TODO Başarıyla siliyor ama dto da geri dönerken birşey patlıyor düzeltilecek!
+            return NoContent();
+        }
+
         [HttpGet]
         public async Task<IActionResult> GetAllUser()
         {
             return Ok(await _authService.GetAllUserAsync());
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetRoles()
+        {
+            return Ok(await _authService.GetRolesAsync());
         }
 
         [HttpPost]

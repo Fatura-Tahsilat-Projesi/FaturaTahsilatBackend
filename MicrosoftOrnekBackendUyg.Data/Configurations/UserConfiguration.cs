@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Data.Configurations
 {
-    class UserConfiguration : IEntityTypeConfiguration<User>
+    class UserConfiguration : IEntityTypeConfiguration<CustomUser>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<CustomUser> builder)
         {
             builder.HasKey(x => x.Id);
             builder.Property(x => x.Id).UseIdentityColumn();

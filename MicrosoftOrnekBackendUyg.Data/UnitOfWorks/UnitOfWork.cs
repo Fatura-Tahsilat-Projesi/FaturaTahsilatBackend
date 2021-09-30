@@ -16,12 +16,15 @@ namespace MicrosoftOrnekBackendUyg.Data.UnitOfWorks
         private InvoiceRepository _invoiceRepository;
         private InvoiceActivityRepository _invoiceActivityRepository;
         private UserRepository _userRepository;
+        private CreditCardsRepository _creditCardsRepository;
 
         public IInvoiceRepository Invoices => _invoiceRepository = _invoiceRepository ?? new InvoiceRepository(_context);
 
         public IInvoiceActivityRepository InvoiceActivities => _invoiceActivityRepository = _invoiceActivityRepository ?? new InvoiceActivityRepository(_context);
 
         public IUserRepository UserRepository => _userRepository = _userRepository ?? new UserRepository(_context);
+
+        public ICreditCardsRepository CreditCardsRepository => _creditCardsRepository = _creditCardsRepository ?? new CreditCardsRepository(_context);
 
         //public ICategoryRepository Categories => throw ;
 

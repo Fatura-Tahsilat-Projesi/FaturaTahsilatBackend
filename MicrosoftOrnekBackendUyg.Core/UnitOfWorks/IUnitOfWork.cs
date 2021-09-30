@@ -15,6 +15,8 @@ namespace MicrosoftOrnekBackendUyg.Core.UnitOfWorks
 
         IUserRepository UserRepository { get; }
 
+        ICreditCardsRepository CreditCardsRepository { get; }
+
         Task CommitAsync();
 
         void Commit();

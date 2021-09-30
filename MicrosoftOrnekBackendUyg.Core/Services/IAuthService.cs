@@ -1,4 +1,5 @@
-﻿using MicrosoftOrnekBackendUyg.Common.DTOs;
+﻿using Microsoft.AspNetCore.Identity;
+using MicrosoftOrnekBackendUyg.Common.DTOs;
 using MicrosoftOrnekBackendUyg.Core.DTOs;
 using MicrosoftOrnekBackendUyg.Core.Models;
 using System;
@@ -21,8 +22,11 @@ namespace MicrosoftOrnekBackendUyg.Core.Services
 
         Task<Response<UserAppDto>> CreateUserAsync(CreateUserDto createUserDto);
         Task<Response<UserAppDto>> CreateAdminUserAsync(CreateUserDto createUserDto);
-        Task<Response<List<string>>> GetAllUserAsync();
+        Task<Response<RoleDto>> CreateRoleAsync(RoleDto role);
+        Task<Response<List<UserApp>>> GetAllUserAsync();
+        Task<Response<List<IdentityRole>>> GetRolesAsync();
         Task<Response<UserAppDto>> GetByIdUserAsync(UserAppDto userAppDto);
         Task<Response<UserAppDto>> GetByIdUserRoleAsync(UserAppDto userAppDto);
+        Task<Response<UserAppDto>> RemoveUserAsync(UserAppDto userAppDto);
     }
 }

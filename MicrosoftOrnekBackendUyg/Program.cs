@@ -48,12 +48,12 @@ namespace MicrosoftOrnekBackendUyg
             Log.Logger = new LoggerConfiguration()
              .WriteTo.Console()
              .WriteTo.Debug(outputTemplate: DateTime.Now.ToString())
-             .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day)
+             .WriteTo.File("logs/log.txt", rollingInterval: RollingInterval.Day)
              .WriteTo.Seq(serverUrl: "http://localhost:5341")
              .Enrich.FromLogContext()
              .WriteTo
              .MSSqlServer(
-                connectionString: "Server=tcp:invoicecollection.database.windows.net,1433;Initial Catalog=InvoiceCollectionDB;Persist Security Info=False;User ID=dbadmin;Password=123456Seven_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+                connectionString: "Data Source=tcp:invoicecollection.database.windows.net,1433;Initial Catalog=MicrosoftOrnekBackendUyg_db;User Id=dbadmin@invoicecollection;Password=123456Seven_",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "Log" },
                 null, null, LogEventLevel.Information, null, null, null, null)
              .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
@@ -63,7 +63,7 @@ namespace MicrosoftOrnekBackendUyg
             Serilog.Debugging.SelfLog.Enable(msg =>
             { 
                 Debug.Print(msg);
-                Debugger.Break();
+                //Debugger.Break();
             });
 
 

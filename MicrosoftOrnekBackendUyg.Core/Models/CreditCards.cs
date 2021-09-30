@@ -9,13 +9,14 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
     public class CreditCards
     {
         public int Id { get; set; }
-        public int CreditCardType { get; set; }
-        public int UserId { get; set; }
+        //public int CreditCardType { get; set; }
+        public string UserId { get; set; }
         public string CardNumber { get; set; }
         public int ExpMonth { get; set; }
         public int ExpYear { get; set; }
         public int CVC2 { get; set; }
         public int Balance { get; set; }
         public DateTime CreatedAt { get; set; }
+
     }
 }

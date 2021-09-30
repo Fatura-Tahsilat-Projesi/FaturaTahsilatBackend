@@ -21,6 +21,10 @@ namespace MicrosoftOrnekBackendUyg.Common.DTOs
             return new Response<T> { Data = data, StatusCode = statusCode, IsSuccessful = true };
         }
 
+        public static Response<T> Success(List<T> result, int statusCode)
+        {
+            return new Response<T> { Data = default, StatusCode = statusCode, IsSuccessful = true };
+        }
         public static Response<T> Success(int statusCode)
         {
             return new Response<T> { Data = default, StatusCode = statusCode, IsSuccessful = true };

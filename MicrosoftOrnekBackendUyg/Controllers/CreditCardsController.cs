@@ -14,10 +14,12 @@ namespace MicrosoftOrnekBackendUyg.Controllers
     [ApiController]
     public class CreditCardsController : ControllerBase
     {
-        private readonly IService<CreditCards> _creditCardService;
+        //private readonly IService<CreditCards> _creditCardService;
+        private readonly ICreditCardsService _creditCardService;
+
         //private readonly RabbitMQPublisher _rabbitMQPublisher;
 
-        public CreditCardsController(IService<CreditCards> service)
+        public CreditCardsController(ICreditCardsService service)
         {
             _creditCardService = service;
             //_rabbitMQPublisher = rabbitMQPublisher;
@@ -29,6 +31,14 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             //_rabbitMQPublisher.Publish(new CreditCards() { Id = 1, Balance = 250, UserId = 1, CardNumber = "1111", CreditCardType = 1, CVC2 = 123, ExpMonth = 9, ExpYear = 3, CreatedAt = DateTime.ParseExact("01/09/2021 10:05:00", "dd/MM/yyyy HH:mm:ss", null) });
             var creditCards = await _creditCardService.GetAllAsync();
             return Ok(creditCards);
+        }
+
+        [HttpGet("{userId}/allcards")]
+        public async Task<IActionResult> GetAllUserCards(string userId)
+        {
+            var creditCard = await _creditCardService.Where(x => x.UserId == userId);
+
+            return Ok(creditCard);
         }
 
         [HttpGet("{id}")]

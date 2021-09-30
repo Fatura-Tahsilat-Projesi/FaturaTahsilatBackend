@@ -14,14 +14,14 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Service.Services
 {
-    public class UserService : Service<User>, IUserService
+    public class UserService : Service<CustomUser>, IUserService
     {
-        public UserService(IUnitOfWork unitOfWork, IRepository<User> repository, ILogger<User> logger) : base(unitOfWork, repository, logger)
+        public UserService(IUnitOfWork unitOfWork, IRepository<CustomUser> repository, ILogger<CustomUser> logger) : base(unitOfWork, repository, logger)
         {
 
         }
 
-        public async Task<User> Authenticate(int id)
+        public async Task<CustomUser> Authenticate(int id)
         {
             return await _unitOfWork.UserRepository.Authenticate(id);
         }

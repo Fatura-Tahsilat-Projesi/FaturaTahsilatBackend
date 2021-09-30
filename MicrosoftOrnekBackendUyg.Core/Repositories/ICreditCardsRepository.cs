@@ -1,4 +1,5 @@
 ﻿using MicrosoftOrnekBackendUyg.Core.Models;
+using MicrosoftOrnekBackendUyg.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,10 +8,8 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Core.Repositories
 {
-    public interface IUserRepository:IRepository<CustomUser>
+    public interface ICreditCardsRepository:IRepository<CreditCards>
     {
-        Task<CustomUser> GetWithInvoiceByIdAsync(int UserId);
-        Task<CustomUser> Authenticate(int id);
-        string CreateTokenAsync(TokenDescriptor descriptor);
+        Task<CreditCards> GetAllUserCreditCardAsync(string userId);
     }
 }

@@ -45,7 +45,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> Save(User user)
+        public async Task<IActionResult> Save(CustomUser user)
         {
             var newUser = await _userService.AddAsync(user);
             return Ok(newUser);
@@ -84,7 +84,7 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
 
         [HttpPut]
-        public IActionResult Update(User user)
+        public IActionResult Update(CustomUser user)
         {
             var updateUser = _userService.Update(user);
 

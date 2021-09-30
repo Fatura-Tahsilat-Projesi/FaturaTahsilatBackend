@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace MicrosoftOrnekBackendUyg.Core.Models
 {
-    public class User
+    public class CustomUser
     {
 
-        public User()
+        /*public User()
         {
             Invoices = new Collection<Invoice>();
             Log = new Collection<Log>();
             //InvoiceActivities = new Collection<InvoiceActivity>();
-        }
+        }*/
 
         public int Id { get; set; }
         public string UserName { get; set; }
@@ -30,8 +30,8 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public int Iban { get; set; }
         public DateTime CreatedAt { get; set; }
 
-        public ICollection<Invoice> Invoices { get; set; }
-        public ICollection<Log> Log { get; set; }
+        //-public ICollection<Invoice> Invoices { get; set; }
+        //-public ICollection<Log> Log { get; set; }
         //public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
 
 

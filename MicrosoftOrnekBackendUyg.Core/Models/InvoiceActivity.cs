@@ -12,7 +12,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
     {
         public int Id { get; set; }
         //[ForeignKey("UserId")]
-        public int UserId { get; set; }
+        public string UserId { get; set; }
         //[ForeignKey("InvoiceId")]
         public int InvoiceId { get; set; }
         //[ForeignKey("CompanyId")]
@@ -23,6 +23,8 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         //public virtual User User { get; set; }
         [JsonIgnore]
         public virtual Invoice Invoice { get; set; }
+        //public virtual UserApp User { get; set; }
+
         //[JsonIgnore]
         //public virtual Company Company { get; set; }
 
