@@ -23,11 +23,14 @@ namespace MicrosoftOrnekBackendUyg.Data
         public DbSet<Invoice> Invoices { get; set; }
         public DbSet<InvoiceActivity> InvoiceActivities { get; set; }
         public DbSet<Company> Companies { get; set; }
-        public DbSet<CustomUser> CustomUsers { get; set; }
+        //public DbSet<CustomUser> CustomUsers { get; set; }
         //TODO bakılacak!
         //public DbSet<AspNetUserManager<User>> Users1 { get; set; }
-
+        //public DbSet<UserApp> AspNetUsers { get; set; }
         //public DbSet<User>
+        
+        //TODO acil buraya log eklenmeli!!
+
 
         public DbSet<CreditCards> CreditCards { get; set; } 
 
@@ -36,35 +39,12 @@ namespace MicrosoftOrnekBackendUyg.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
 
-            //modelBuilder.Entity<InvoiceActivity>()
-            //   .HasOne(s => s.Invoice)
-            //   .WithMany(c => c.InvoiceActivities)
-            //   .HasForeignKey(s => new { s.CompanyId, s.UserId, s.InvoiceId });
-
-            //modelBuilder.Entity<Invoice>().HasMany(i => i.Invoice).WithRequired().WillCascadeOnDelete(false);
-
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
             modelBuilder.ApplyConfiguration(new InvoiceConfiguration());
             
             modelBuilder.ApplyConfiguration(new InvoiceActivityConfiguration());
             modelBuilder.ApplyConfiguration(new CompanyConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
-
-
-
-            //modelBuilder.Entity<InvoiceActivity>()
-            //   .HasOne(s => s.Invoice)
-            //   .WithMany(c => c.InvoiceActivities)
-            //   .HasForeignKey(s => new { s.CompanyId, s.UserId, s.InvoiceId });
-
-
-            //modelBuilder.Entity<InvoiceActivity>()
-            //   .HasOne(s => s.Invoice)
-            //   .WithMany(c => c.RecordOfInvoiceActivity)
-            //   .HasForeignKey(s => new { s.CompanyId, s.UserId, s.InvoiceId });
-
-            //modelBuilder.Entity<Invoice>().HasMany(i => i.Invoice).WithRequired().WillCascadeOnDelete(false);
-
 
 
             modelBuilder.ApplyConfiguration(new CompanySeed(new int[] { 1, 2, 3, 4, 5, 6 }));

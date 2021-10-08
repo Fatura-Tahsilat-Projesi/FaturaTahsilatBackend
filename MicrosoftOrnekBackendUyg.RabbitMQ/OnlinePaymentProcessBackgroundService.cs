@@ -82,6 +82,12 @@ namespace MicrosoftOrnekBackendUyg.RabbitMQ
                 dbContext.Invoices.Update(guncellenecekFaturaDegeri.Result);
                 var dbProcess = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
                 dbProcess.Commit();
+                Serilog.Log.Information("Fatura Ödemesi yapıldı. Bilgiler => | user: " + creditCards.UserId + " | fatura: " + creditCards.InvoiceId);
+                var date = DateTime.Now.ToString();
+                var invoiceActivity = new InvoiceActivity() { InvoiceId = creditCards.InvoiceId, UserId = creditCards.UserId, TransactionDate = DateTime.ParseExact(date, "d/MM/yyyy HH:mm:ss", null), StatusCode = 1, CompanyId = 1 };
+                dbContext.InvoiceActivities.AddAsync(invoiceActivity);
+                dbProcess.Commit();
+
             }
 
             _channel.BasicAck(@event.DeliveryTag, false);

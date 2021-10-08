@@ -28,15 +28,6 @@ namespace MicrosoftOrnekBackendUyg
             .AddJsonFile("appsettings.json")
             .Build();
 
-            //Logger logger = new LoggerConfiguration()
-            //    .ReadFrom.Configuration(configuration, sectionName: "CustomSection")
-            //    .CreateLogger();
-
-            /*
-             *              .Enrich.WithProperty("AppName", "Fatura Tahsilatý")
-             .Enrich.WithProperty("Environment", "Development")
-             .Enrich.WithProperty("Coder", "Muhammed")
-             */
             var columnOptions = new ColumnOptions
             {
                 AdditionalColumns = new Collection<SqlColumn>
@@ -44,7 +35,10 @@ namespace MicrosoftOrnekBackendUyg
                    new SqlColumn("UserName", SqlDbType.VarChar)
                }
             };
-             
+
+            //Data Source=tcp:invoicecollection.database.windows.net,1433;Initial Catalog=MicrosoftOrnekBackendUyg_db;User Id=dbadmin@invoicecollection;Password=123456Seven_
+            //Data Source=DESKTOP-GA0KMBM;Initial Catalog=InvoiceCollectionNew;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False
+            //
             Log.Logger = new LoggerConfiguration()
              .WriteTo.Console()
              .WriteTo.Debug(outputTemplate: DateTime.Now.ToString())
@@ -53,7 +47,7 @@ namespace MicrosoftOrnekBackendUyg
              .Enrich.FromLogContext()
              .WriteTo
              .MSSqlServer(
-                connectionString: "Data Source=tcp:invoicecollection.database.windows.net,1433;Initial Catalog=MicrosoftOrnekBackendUyg_db;User Id=dbadmin@invoicecollection;Password=123456Seven_",
+                connectionString: "Data Source=DESKTOP-GA0KMBM;Initial Catalog=InvoiceCollectionNew;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "Log" },
                 null, null, LogEventLevel.Information, null, null, null, null)
              .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
@@ -68,10 +62,6 @@ namespace MicrosoftOrnekBackendUyg
 
 
             CreateHostBuilder(args).Build().Run();
-
-            //Log.Logger = new LoggerConfiguration()
-            //    .ReadFrom.Configuration(configuration)
-            //    .CreateLogger();
 
             //try
             //{

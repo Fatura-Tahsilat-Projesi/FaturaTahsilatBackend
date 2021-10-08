@@ -52,9 +52,9 @@ namespace MicrosoftOrnekBackendUyg.Controllers
         }
 
         [HttpGet("{companyId}/companyallinvoices")]
-        public async Task<IActionResult> GetAllCompanyInvoices(int companyId)
+        public async Task<IActionResult> GetAllCompanyInvoices(string companyId)
         {
-            var invoices = await _invoiceService.Where(x => x.CompanyId == companyId);
+            var invoices = await _invoiceService.Where(x => x.UserId == companyId);
             return Ok(invoices);
             //return Ok(_mapper.Map<IEnumerable<InvoiceDto>>(invoices));
         }
@@ -92,10 +92,18 @@ namespace MicrosoftOrnekBackendUyg.Controllers
             //_rabbitMQPublisher.Publish(new CreditCards() { Id = 1, Balance = 250, UserId = invoice.UserId, CardNumber = "1111", CreditCardType = 1, CVC2 = 123, ExpMonth = 9, ExpYear = 3, CreatedAt = DateTime.ParseExact("01/09/2021 10:05:00", "dd/MM/yyyy HH:mm:ss", null) });
             
             //--var updateInvoice = _invoiceService.Update(invoice);
-            _rabbitMQPublisher.Publish(new OnlinePaymentEvent() { InvoiceId = invoice.InvoiceId });
+            _rabbitMQPublisher.Publish(new OnlinePaymentEvent() { InvoiceId = invoice.InvoiceId, UserId = invoice.UserId });
             Serilog.Log.Information("Fatura  Güncellendi. Bilgiler => | FaturaNu: " + invoice.InvoiceNu + " | FaturaIsim: " + invoice.Name + " | FaturaToplam: " + invoice.Total + " | FaturaToplamKDV: " + invoice.TotalVat + " | FaturaKDVsiz: " + invoice.ExcludingVat + " | SonOdemeTarihi: " + invoice.DueDate + " | FaturaTipi: " + invoice.InvoiceType + " | DurumKodu: " + invoice.StatusCode + " | OdenmeDurumu: " + invoice.IsComplete + " | FirmaId: " + invoice.CompanyId + " | UserId: " + invoice.UserId + " | ");
             return NoContent();
         }
+
+        [HttpPut("normalInvoice")]
+        public IActionResult UpdateNormalInvoice(Invoice invoice)
+        {
+            var updateInvoice = _invoiceService.Update(invoice);
+            return NoContent();
+        }
+
 
 
         [HttpDelete("{id}")]

@@ -628,9 +628,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                     b.Property<string>("City")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("CompanyId")
-                        .HasColumnType("int");
-
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
@@ -641,9 +638,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
                     b.Property<bool>("EmailConfirmed")
                         .HasColumnType("bit");
-
-                    b.Property<int?>("InvoiceId")
-                        .HasColumnType("int");
 
                     b.Property<bool>("LockoutEnabled")
                         .HasColumnType("bit");
@@ -682,10 +676,6 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
                         .HasColumnType("nvarchar(256)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("CompanyId");
-
-                    b.HasIndex("InvoiceId");
 
                     b.HasIndex("LogId");
 
@@ -793,21 +783,9 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.UserApp", b =>
                 {
-                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Company", "Company")
-                        .WithMany("UserApps")
-                        .HasForeignKey("CompanyId");
-
-                    b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Invoice", "Invoice")
-                        .WithMany("UserApps")
-                        .HasForeignKey("InvoiceId");
-
                     b.HasOne("MicrosoftOrnekBackendUyg.Core.Models.Log", "Log")
                         .WithMany("UserApps")
                         .HasForeignKey("LogId");
-
-                    b.Navigation("Company");
-
-                    b.Navigation("Invoice");
 
                     b.Navigation("Log");
                 });
@@ -815,15 +793,11 @@ namespace MicrosoftOrnekBackendUyg.Data.Migrations
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Company", b =>
                 {
                     b.Navigation("Invoices");
-
-                    b.Navigation("UserApps");
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Invoice", b =>
                 {
                     b.Navigation("InvoiceActivities");
-
-                    b.Navigation("UserApps");
                 });
 
             modelBuilder.Entity("MicrosoftOrnekBackendUyg.Core.Models.Log", b =>

@@ -24,7 +24,7 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
         public string UserId { get; set; }
         //public virtual UserApp User { get; set; }
         public ICollection<Invoice> Invoices { get; set; }
-        public ICollection<UserApp> UserApps { get; set; }
+        //public ICollection<UserApp> UserApps { get; set; }
 
         //public ICollection<InvoiceActivity> InvoiceActivities { get; set; }
 

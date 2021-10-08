@@ -11,9 +11,9 @@ namespace MicrosoftOrnekBackendUyg.Core.Models
     {
         public string City { get; set; }
 
-        public virtual Invoice Invoice { get; set; }
+        //public virtual Invoice Invoice { get; set; }
 
-        public virtual Company Company { get; set; }
+        //public virtual Company Company { get; set; }
         public virtual Log Log { get; set; }
 
     }
