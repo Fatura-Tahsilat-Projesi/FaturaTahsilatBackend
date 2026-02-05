@@ -44,7 +44,7 @@ namespace MicrosoftOrnekBackendUyg
              .Enrich.FromLogContext()
              .WriteTo
              .MSSqlServer(
-                connectionString: "Data Source=DESKTOP-GA0KMBM;Initial Catalog=InvoiceCollectionNew;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False",
+                connectionString: "",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "Log" },
                 null, null, LogEventLevel.Information, null, null, null, null)
              .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
