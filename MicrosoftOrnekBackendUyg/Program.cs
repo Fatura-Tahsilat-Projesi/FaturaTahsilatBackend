@@ -27,16 +27,7 @@ namespace MicrosoftOrnekBackendUyg
             .SetBasePath(Directory.GetCurrentDirectory())
             .AddJsonFile("appsettings.json")
             .Build();
-
-            //Logger logger = new LoggerConfiguration()
-            //    .ReadFrom.Configuration(configuration, sectionName: "CustomSection")
-            //    .CreateLogger();
-
-            /*
-             *              .Enrich.WithProperty("AppName", "Fatura Tahsilatý")
-             .Enrich.WithProperty("Environment", "Development")
-             .Enrich.WithProperty("Coder", "Muhammed")
-             */
+            
             var columnOptions = new ColumnOptions
             {
                 AdditionalColumns = new Collection<SqlColumn>
@@ -53,11 +44,10 @@ namespace MicrosoftOrnekBackendUyg
              .Enrich.FromLogContext()
              .WriteTo
              .MSSqlServer(
-                connectionString: "Server=tcp:invoicecollection.database.windows.net,1433;Initial Catalog=InvoiceCollectionDB;Persist Security Info=False;User ID=dbadmin;Password=123456Seven_;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;",
+                connectionString: "",
                 sinkOptions: new MSSqlServerSinkOptions { TableName = "Log" },
                 null, null, LogEventLevel.Information, null, null, null, null)
              .MinimumLevel.Override("Microsoft", LogEventLevel.Error)
-             //.MinimumLevel.Information()
              .CreateLogger();
 
             Serilog.Debugging.SelfLog.Enable(msg =>
@@ -68,26 +58,6 @@ namespace MicrosoftOrnekBackendUyg
 
 
             CreateHostBuilder(args).Build().Run();
-
-            //Log.Logger = new LoggerConfiguration()
-            //    .ReadFrom.Configuration(configuration)
-            //    .CreateLogger();
-
-            //try
-            //{
-            //    CreateHostBuilder(args).Build().Run();
-            //    return;
-            //}
-            //catch (Exception ex)
-            //{
-            //    Log.Fatal(ex, "Host terminated unexpectedly");
-            //    return;
-            //}
-            //finally
-            //{
-            //    Log.CloseAndFlush();
-            //}
-
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
